@@ -50,14 +50,14 @@ public class StudentDaoImpl implements StudentDao {
 
     private void storage(Document doc) throws IOException {
         OutputFormat format=OutputFormat.createPrettyPrint();
-        XMLWriter writer=new XMLWriter(new FileOutputStream("JavaWeb2/src/student.xml"),format);
+        XMLWriter writer=new XMLWriter(new FileOutputStream("D://IDEA WORKSPACE2//src/student.xml"),format);
         writer.write(doc);
         writer.close();
     }
 
     private Document getDocument() throws DocumentException {
         SAXReader reader=new SAXReader();
-        return reader.read(new File("JavaWeb2/src/student.xml"));
+        return reader.read(new File("D://IDEA WORKSPACE2/JavaWeb2/src/student.xml"));
     }
 
     @Override
