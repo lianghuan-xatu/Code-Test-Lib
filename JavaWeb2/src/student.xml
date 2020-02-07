@@ -10,5 +10,15 @@
     <name>jack</name>  
     <age>20</age>  
     <sex>male</sex> 
-  </student> 
+  </student>  
+  <student number="it_cast_0001"> 
+    <name>jack</name>  
+    <age>18</age>  
+    <sex>male</sex> 
+  </student>  
+  <student number="it_cast_0005">
+    <name>frank</name>
+    <age>18</age>
+    <sex>male</sex>
+  </student>
 </students>

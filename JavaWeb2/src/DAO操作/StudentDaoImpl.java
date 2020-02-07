@@ -50,8 +50,8 @@ public class StudentDaoImpl implements StudentDao {
 
     private void storage(Document doc) throws IOException {
         OutputFormat format=OutputFormat.createPrettyPrint();
-        XMLWriter writer=new XMLWriter(new FileOutputStream("D://IDEA WORKSPACE2//src/student.xml"),format);
-        writer.write(doc);
+        XMLWriter writer=new XMLWriter(new FileOutputStream("D://IDEA WORKSPACE2/JavaWeb2/src/student.xml"),format);
+        writer.write(doc);                                //      D://IDEA WORKSPACE2/JavaWeb2/
         writer.close();
     }
 
