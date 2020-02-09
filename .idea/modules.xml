@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/IDEA WORKSPACE2.iml" filepath="$PROJECT_DIR$/IDEA WORKSPACE2.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaWeb2/JavaWeb2.iml" filepath="$PROJECT_DIR$/JavaWeb2/JavaWeb2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sever/Sever.iml" filepath="$PROJECT_DIR$/Sever/Sever.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TomcatTest/TomcatTest.iml" filepath="$PROJECT_DIR$/TomcatTest/TomcatTest.iml" />
     </modules>
   </component>
 </project>
