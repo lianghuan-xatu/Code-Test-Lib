@@ -35,7 +35,7 @@ http://localhost/day14/demo1-------请求（请求消息）--》    1、tomcat�
                     *   GET/demo1?name=zhangsan HTTP/1.1
                     *方法：
                         1、获取请求方式：GET
-                            *String getmethod
+                            *String getMethod
                       * 2、获取虚拟目录：/day14
                             *String getContextPath()
                         3、获取Servlet路径：/demo1
@@ -49,6 +49,14 @@ http://localhost/day14/demo1-------请求（请求消息）--》    1、tomcat�
                             *String getProtocol()
                         7、获取客户机的IP地址：
                             *String getRemoteAddr()
+
+                        *URL:统一资源定位符：http://localhost/Test/RequestDemo1   中华人民共和国
+                        *URI:同一资源标识符：/Test/RequestDemo1       共和国
+
+
+
+
+
 
                 2、获取请求头数据
                 3、获取请求体数据
