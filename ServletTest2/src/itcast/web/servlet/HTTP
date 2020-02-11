@@ -1,0 +1,78 @@
+HTTP:
+    *概念 ：Hyper Text Transfer Protocol超文本传输协议
+
+*响应消息数据模型
+
+		     请求（请求消息）
+            ---------------------------------》》》》》
+
+客户端    		                         			服务器端
+          《《《《《----------------------------------
+	       	响应（响应消息）
+
+		*特点：
+		1、基于TCP/IP的高级协议
+		2、默认端口号：80
+			http://www.itcast.cn:80
+		3、基于请求/响应模型的：一次请求对应一次响应
+		4、无状态的：每次请求之间相互独立，不能交互数据
+
+	历史版本：
+		1.0版本   每一次请求都会建立新的连接
+		1.1版本   会复用每个连接
+
+*请求消息数据格式
+	1、请求行
+
+		请求方式   请求url  请求协议/版本
+		GET/login.html/HTTP/1.1
+		*字符串格式
+        GET/login.html/HTTP/1.1
+
+        *请求方式：
+               *HTTP协议有7种请求方式，常用的有两种
+                     *GET：
+                        1、请求参数在请求行中，在url后
+                        2、请求的url长度有限制
+                        3、不太安全
+
+                     *POST：
+                        1、请求参数在请求体中
+                        2、请求的url长度没有限制
+                        3、相对安全
+
+	2、请求头
+		请求头名称：请求头值
+	                       GET /login.html HTTP/1.1
+                           Host: localhost
+                           Connection: keep-alive
+                           Cache-Control: max-age=0
+                           Upgrade-Insecure-Requests: 1
+                           User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Mobile Safari/537.36
+                           Sec-Fetch-User: ?1
+                           Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+                           Sec-Fetch-Site: none
+                           Sec-Fetch-Mode: navigate
+                           Accept-Encoding: gzip, deflate, br
+                           Accept-Language: zh-CN,zh;q=0.9,da;q=0.8
+                           If-None-Match: W/"265-1581416562196"
+                           If-Modified-Since: Tue, 11 Feb 2020 10:22:42 GMT
+          1、User-Agent：浏览器告诉我们服务器，我访问你使用的浏览器版本信息
+                *可以在服务器端获取该头的信息，解决浏览器的兼容性问题
+          2、Referer:http://localhost/login.html
+            *告诉服务器，我（当前请求）从哪里来？
+            作用：
+                1、防盗链    从优酷首页来还是其他网站
+                2、统计工作    放广告 从百度来的计数  新浪来的计数
+
+
+
+	3、请求空行
+		空行   *用于分隔POST请求的请求头和请求体的
+	4、请求体（正文）
+		username=zhangsan
+        *封装POST请求消息的请求参数
+
+
+
+

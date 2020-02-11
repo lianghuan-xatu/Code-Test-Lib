@@ -1,0 +1,11 @@
+Servlet相关配置
+    1、urlpartten：Servlet访问路径
+    1、一个Servlet可以定义多个访问路径：@WebServlet({"/d4","/dd4","/ddd4"})
+
+    2、路径定义规则：
+        1、/XXX
+        2、/XXX/XXX多层结构，目录结构
+        @WebServlet("/user/demo4")
+        @WebServlet("/user/*")  在user后面无论输入什么都可以访问到
+        @WebServlet("/*")    无论输入什么都可以访问到
+        3、*.do  访问时输入   demo4.do才能访问到     切记配置时前置不能加/会报错

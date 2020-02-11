@@ -1,0 +1,13 @@
+
+
+IDEA与tomcat的相关配置
+    1、IDEA会为每一个tomcat部署的项目单独建立一份配置文件
+   查看控制台的log：Using CATALINA_BASE:   "C:\Users\lf928\.IntelliJIdea2019.3\system\tomcat\_IDEA_WORKSPACE2"
+    在配置文件的conf目录下的server.xml中有部署的tomcat服务器的信息
+    Catalina\localhost目录下有部署的两个项目的配置文件   在配置文件中有设置的虚拟目录 和 项目部署位置
+  工作空间项目目录D:\IDEA WORKSPACE2\ServletTest和  tomcat部署的项目目录D:\IDEA WORKSPACE2\out\artifacts\ServletTest_war_exploded2
+tomcat 真正访问的是“tomcat部署的web项目
+“tomcat部署的web项目“对应着”工作空间”的out目录下的所有资源
+工作空间项目下的src部署后到out\artifacts\ServletTest_war_exploded2\WEB-INF\classes目录
+WEB-INF目录下的文件不会被浏览器访问到
+断点调试  小虫子

@@ -1,0 +1,55 @@
+request对象和response对象：
+
+
+##Request:
+    1、request对象和response对象的原理
+        1、request和response对象都是由服务器创建的。我们来使用它们
+        2、request对象是来获取请求消息的，response对象是来设置响应消息的
+
+
+@WebServlet("/dmo1")
+public class ServletDemo1 implements Servlet {
+    @Override
+    public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
+
+    }
+}
+http://localhost/day14/demo1-------请求（请求消息）--》    1、tomcat服务器会根据请求url中的资源路径，创建对应的ServletDemo1对象。
+                                                          2、tomcat服务器，会创建request和response对象，request对象中封装请求消息数据
+                                                          3、tomcat将request和response两个对象创建给service方法，并且调用service方法。
+                                                          4、程序员可以通过request对象获取请求消息数据，通过response对象设置响应消息数据
+                                                          5、服务器在给浏览器作出响应之前，会从response对象中拿程序员设置的响应消息数据
+
+
+      2、request对象继承体系结构：
+        ServletRequest     --------接口
+            |继承
+        HttpServletRequest   ---------接口
+            |实现
+        org.apache.catalina.connector.RequestFacade   类（tomcat创建）可打开tomcat源码查看
+
+
+      3、request：
+              1、获取请求消息数据
+                1、获取请求行数据
+                    *   GET/demo1?name=zhangsan HTTP/1.1
+                    *方法：
+                        1、获取请求方式：GET
+                            *String getmethod
+                      * 2、获取虚拟目录：/day14
+                            *String getContextPath()
+                        3、获取Servlet路径：/demo1
+                            *String getServletPath()
+                        4、获取get请求方式请求参数：name=zhangsan
+                            *String getQueryString()
+                      * 5、获取请求URI：/day14/demo1
+                            *String getRequestURI():  /day14/demo1
+                            *StringBuffer getRequestURL():  http://localhost/day14/demo1
+                        6、获取协议及版本：HTTP/1.1
+                            *String getProtocol()
+                        7、获取客户机的IP地址：
+                            *String getRemoteAddr()
+
+                2、获取请求头数据
+                3、获取请求体数据
+              2、其他功能：
