@@ -269,3 +269,18 @@ http://localhost/day14/demo1-------请求（请求消息）--》    1、tomcat�
 
 
 3、ServletContext对象
+        1、代表整个Web应用，可以和程序的容器（服务器）来同信
+        2、获取：
+            1、通过request对象获取
+               reques.getServletContext();
+            2、通过HttpServlet获取
+                this.getServletContext();
+
+
+        3、功能：
+            1、获取MIME类型
+                *MIME类型：在互联网通信过程定义的一种文件数据结构
+                    *格式：大类型/小类型   text/html     image/jpeg
+
+            2、域对象：共享数据
+            3、获取文件的真实（服务器）路径
