@@ -23,5 +23,16 @@
     <orderEntry type="library" name="commons-logging-1.2" level="project" />
     <orderEntry type="library" name="junit-4.13" level="project" />
     <orderEntry type="library" name="hamcrest-core-1.3" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/web/WEB-INF/libs" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/web/WEB-INF/libs" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="libs" level="application" />
   </component>
 </module>
