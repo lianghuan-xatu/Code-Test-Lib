@@ -69,5 +69,50 @@
                                     2、回写Cookie：lastTime=2018年6月10日23：50：20
 
 
+    ## JSP：入门学习：
+        1、概念：
+            *Java Server Pages:java服务器端页面
+                *可以理解为：一个特殊的页面，其中既可以指定定义html标签，又可以定义java代码
+                *用于简化书写
+        2、原理
+            1、服务器解析请求消息，找是否有index.jsp资源
+            2、如果找到了，会将index.jsp转换为.java文件   //在服务器临时目录work中
+            3、编译.java文件，生成.class字节码文件
+            4、由字节码文件提供访问
+            class index_jsp extends org.apache.jasper.runtime.HttpJspBase
+        apache-tomcat-8.0.11-src\java\org\apache\jasper\runtime目录源码：
+        public abstract class HttpJspBase extends HttpServlet implements HttpJspPage其中的service方法：
+         public abstract void _jspService(HttpServletRequest request,
+                                             HttpServletResponse response)
+                throws ServletException, IOException;
+        }
+
+      继承的 index_jsp 的类中的service中执行方式：
+      out.write("\n");
+      out.write("\n");
+      out.write("<html>\n");
+      out.write("  <head>\n");
+      out.write("    <title>$Title$</title>\n");
+      out.write("  </head>\n");
+      out.write("  <body>\n");
+      out.write("      ");
+
+        System.out.println("hello jsp");
+
+      out.write("\n");
+      out.write("      <h1>hi    JSP</h1>\n");
+      out.write("\n");
+      out.write("  Hello Response\n");
+      out.write("  $END$\n");
+      out.write("  </body>\n");
+      out.write("</html>\n");
+
+            *JSP本质就是一个Servlet
+        3、JSP的脚本：JSP定义Java代码的方式
+            1、<%  代码  %>:定义的java代码，在service方法中。service方法中可以定义什么，这里就可以定义什么
+            2、<%!  代码  %>: 定义的java代码，在jsp转换后的java类的成员位置
+            3、<%=  代码  %>:定ding义的Java代码，会输出到页面上。输出语句中可以定义什么，该脚本中就可以定义什么
+        4、JSP的内置对象
+
 
 

@@ -11,6 +11,11 @@
     <title>$Title$</title>
   </head>
   <body>
+      <%
+        System.out.println("hello jsp");
+      %>
+      <h1>hi    JSP</h1>
+
   Hello Response
   $END$
   </body>
