@@ -13,9 +13,11 @@
   <body>
       <%
         System.out.println("hello jsp");
+          String contextPath1 = request.getContextPath();
+          out.print(contextPath1);
       %>
       <h1>hi    JSP</h1>
-
+    <% response.getWriter().write("response...");%>
   Hello Response
   $END$
   </body>

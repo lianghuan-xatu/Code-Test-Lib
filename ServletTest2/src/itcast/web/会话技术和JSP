@@ -113,6 +113,65 @@
             2、<%!  代码  %>: 定义的java代码，在jsp转换后的java类的成员位置
             3、<%=  代码  %>:定ding义的Java代码，会输出到页面上。输出语句中可以定义什么，该脚本中就可以定义什么
         4、JSP的内置对象
+                *在JSP页面中不需要获取和创建，可以直接使用的对象
+                *Jsp一共有个内置对象
+                    今天学习三个：
+                        *request
+                        *response
+                        *out:字符输出流对象。可以将数据输出到页面上。和response.getWriter()类似
+                            *reponse.getWriter()和out.Writer的区别：
+                                *在tomcat服务器真正给客户端做出响应之前，会先找response缓冲区数据，再找out缓冲区数据。response.getWriter()数据输出永远在out.writer之前
 
+##Session:
+        1、概念：服务器端会话技术，在一次会话的多次请求间共享数据，将数据保存在服务器的对象中。HTTPSession
+        2、快速入门：
+            1、获取HttpSession对象：
+             HttpSession session=request.getSession();
+            2、使用HttpSession对象
+                Object getAttribute(String name)
+                void setAttribute(String name,Object value)
+                void removeAttribute(String name)
+            3、实现原理
 
+            ****Session是依赖于Cookie的！
+                                                                    SessionDemo1
+                       --------------------------------》》             HttpSession session=request.getSession();
+                       《《-------------------------------                第一次获取Session，没有Cookie，          |
+                       响应：set-cookie:JSESSIONID=874243u2332             会在内存中创建一个新的Session对象        |
+JSESSIONID=874243u2332                                                                                           session对象  《----  id=874243u2332
+                                                                    SessionDemo2                                  |
+                        请求：  cookie：JSESSIONID=874243u2332                                                    |
+                        --------------------------------》》            HttpSession session=request.getSession();
+                       《《-------------------------------
+            4、细节：
+                1、当客户端关闭后，服务器不关闭，两次获取session是否为同一个？
+                    *默认情况下。不是：浏览器关闭客户端会话结束
+                    * 如果需要相同：期望客户端关闭后，session也能相同
+                             Cookie c=new Cookie("JSESSIONID",session.getId());
+                             c.setMaxAge(60*60);
+                             response.addCookie(c);
+                2、客户端不关闭，服务器关闭后，两次获取的session是同一个吗？
+                    *不是同一个，但是要确保数据不丢失（tomcat服务器会自动将session钝化活化  不必担心）
+                        *session的钝化：
+                            *在服务器正常关闭之前，将session对象序列化到硬盘上
+                        *session的活化：
+                            *在服务器启动后，将session文件转化为内存中的session对象即可。
+                3、session的（什么时候被销毁）失效时间？
+                        1、服务器关闭
+                        2、session对象调用invalidate()
+                        3、session默认失效时间30分种  可在服务器安装目录或项目web.xml 修改session-config
+            5、session的特点：
+                            1、session用于存储一次会话的多次请求的数据，存在服务器端
+                            2、session可以存储任意类型，任意大小的数据
+                     *session与cookie的区别：
+                        1、session存储数据在服务器端，cookie在客户端
+                        2、session没有数据大小限制，cookie有
+                        3、sessio数据安全，cookie相对于不安全
+            ##案例：验证码
+                1、案例需求：
+                    1、访问带有验证码的登录页面
+                    2、用户输入用户名，密码以及验证码
+                           *如果用户名和密码输入有误，跳转登录页面，提示：用户名或密码错误
+                           *如果验证码输入有误，跳转登录页面，提示：验证码错误
+                           *如果全部输入正确，则跳转到主页success.jsp，显示：用户名，欢迎您
 
