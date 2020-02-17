@@ -14,12 +14,73 @@
                     *isErrorPage：标识当前页面是否是错误页面
                             *true 标识错误页面后才可以通过内置对象String message=exception.getMessage();获得错误信息
                 2、include：页面包含的。导入页面的资源文件
-                3、taglib：导入资源
-      2、注释
+                        *可以做页面包含导入页面<%@include file="top.jsp"%>
+                3、taglib：导入资源<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+                        *prefix：自定义前缀
+      2、注释：
+        1、html注释：<!-- -->只能注释html代码片段
+        2、jsp注释：<%-- --%>可以注释所有  推荐使用
       3、内置对象
+        *在jsp页面中不需要创建，直接使用的对象
+        *一共9个：
+                变量名                     真实类型                    作用
+              *pageContext              PageContext                 当前页面共享数据，还可以获取其他8个对象
+              *request                  HttpServletRequest          一次请求访问的多个资源（转发）
+              *session                  HttpSession                 一次会话的多个请求间
+              *application              ServletContext              所有用户间共享数据
+              *response                 HttpServletResponse         响应对象
+              *page                     Object                      当前页面（Servlet）的对象  this
+              *out                      JspWriter                   输出对象，数据输出到页面上
+              *config                   ServletConfig               Servlet的配置对象
+              *exception                Throwable                   异常对象
+
+##   MVC：开发模式
+        1、jsp演变历史
+            1、早期只有servlet，只能使用response输出标签数据，非常麻烦
+            2、后来有jsp，简化了Servlet的开发，如果过度使用jsp，在jsp中即写大量的java代码，又写html表，造成难以维护，难于分工协作
+            3、再后来，java的web开发，借鉴mvc开发模式，使得程序的设计更加合理性。
+        2、MVC：
+            1、M：Model 模型   JavaBean
+                *完成具体的业务操作，如：查询数据库，封装对象
+            2、V：View  视图   JSP
+                *展示数据
+            3、C：Controller 控制器   Servlet
+                *获取用户的输入
+                *调用模型
+                *将数据交给试图展示
+        *优缺点：
+            1、优点：
+                1、耦合性低，方便维护，可以利于分工协作
+                2、重用性高
+            2、缺点：
+                1、使得项目架构变得复杂，对开发人员要求高
 
 
+                                                                       Servlet
+                                                        |   Controller控制器：1、获取客户端的输入
+                                                        |                     2、调用模型          ------ 》调用模型，进行业务操作
+浏览器-------------------------------------》》》服务器  |                     3、将数据交给视图展示 《------  Mode模型  ：业务逻辑操作
+     《《《  ----------------------------------- 服务器  |                    ||                                  JavaBean
+                                                        |                    ||
+                                                                             ||
+                                                                             View视图： 展示数据
+                                                                                    JSP
 
-
-
-
+##  EL表达式
+    1、概念：Expression Language 表达式语言
+    2、作用：替代和简化jsp页面中java代码的编写
+    3、语法：${表达式}
+    4、注意：
+        *jsp默认支持el表达式的
+                *1、如果在jsp指令page中加入isELIgnored="true"  则原样输出
+                *2、\${表达式}  ：忽略当前这个el表达式
+    5、使用：
+        1、运算：
+            *运算符：
+                1、算数运算符：+ — * /(div) %(mod)
+                2、比较运算符：> < >= <= == !=
+                3、逻辑运算符：&&(and) ||(or) !(not)
+                4、空运算符：empty
+                    *功能：用于判断字符串、集合，数组对象是否为null并且长度是否为0
+                        ${empty list}
+        2、获取值
