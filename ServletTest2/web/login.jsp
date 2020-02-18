@@ -26,7 +26,7 @@
     </style>
 </head>
 <body>
-    <form action="/Test/loginServlet2" method="post">
+    <form action="${pageContext.request.contextPath}/loginServlet2" method="post">
         <table>
             <tr>
                 <td>用户名</td>
@@ -48,7 +48,9 @@
             </tr>
         </table>
     </form>
-<div><%=request.getAttribute("cc_error")==null ? "":request.getAttribute("cc_error")%></div>
-<div><%=request.getAttribute("login_error")==null ? "":request.getAttribute("login_error")%></div>
+    ${requestScope.cc_error}
+    ${requestScope.login_error}
+<%--<div><%=request.getAttribute("cc_error")==null ? "":request.getAttribute("cc_error")%></div>
+<div><%=request.getAttribute("login_error")==null ? "":request.getAttribute("login_error")%></div>--%>
 </body>
 </html>

@@ -82,5 +82,82 @@
                 3、逻辑运算符：&&(and) ||(or) !(not)
                 4、空运算符：empty
                     *功能：用于判断字符串、集合，数组对象是否为null并且长度是否为0
-                        ${empty list}
+                    * ${empty list}：判断字符串、集合、数组对象是否为null或者长度为0
+                    * ${not empty str}：表示判断字符串、集合、数组对象是否不为null 并且长度>0
         2、获取值
+            1、el表达式只能从域对象中获取值
+            2、语法：
+                1、${域名称.键名}：从指定域中获取指定键的值
+                    *域名称：
+                        1、pageScope  ------》pageContext
+                        2、requestScope-----》request
+                        3、sessionScope------》session
+                        4、applicationScope--->application(ServletContext)
+                    *举例：在request域中存储了 name=张三
+                    *获取：${requestScope.name}
+                2、${键名}：表示依次从最小的域中去查找是否有该键对应的值，直到找到为止。
+                3、获取对象、List集合、Map集合的值
+                    1、对象：${域名称.键名.属性名}
+                        *本质上会去调用对象的getter方法
+                    2、List集合：${域名称.键名[索引]}
+                    3、Map集合：
+                        *${域名称.键名.key名称}
+                        *${域名称.键名["key名称"]}
+            3、隐式对象：
+               * el表达式中有11个隐式对象
+               * pageContext：
+                    *获取其他8个内置对象
+                        *动态获取虚拟目录:
+                       ${pageContext.request.contextPath}
+
+##  JSTL
+        1、概念：JavaServer Pages Tag Library    JSP标准标签库
+            *是由Apache组织提供的开源的免费的jsp标签
+        2、作用：用于简化和替换jsp页面上的java代码
+        3、使用步骤：
+            1、导入jstl相关jar包
+            2、引入标签库：taglib指令： <%@ taglib %>
+            3、使用标签
+        4、常用的JSTL标签
+     1、if   ：相当于java代码的if语句
+            c:if标签
+             1、属性：
+            *test必须属性，接收Boolean表达式
+                *如果表达式为true，则显示if标签体内容，如果flase则不显示标签体内容
+                  *一般情况，test属性值会结合el表达式一起使用
+             2、注意：c:if标签没有else情况，想要else情况，则可以在定义一个if标签
+
+    2、choose   :相当于java代码的switch语句：
+
+            1、域中存储一数字
+            2、使用choose标签取出数字             相当于：switch
+            3、使用when标签做数字判断             相当于：case
+            4、otherwise标签做出其他情况的声明    相当于：default
+
+    3、foreach  ：相当于java代码的for语句
+             foreach：相当于java代码的for语句
+                        1、完成重复的操作
+                            for(int i=0;i<10;i++){
+                                }
+                            *属性：
+                                begin:开始值
+                                end：结束值
+                                var：临时变量
+                                step:步长
+                                varStatus:循环状态
+                                        index:容器中元素的索引
+                                        count：循环次数
+                        2、遍历容器
+                            List<User> list;
+                            for(User user:List){
+                                }
+                            *属性：
+                                    items:容器对象
+                                    var:容器中元素的临时变量
+                                    varStatus:循环状态对象
+                                    index:容器中元素的索引，从0开始
+                                    count:循环次数，从1开始
+
+               练习：
+                        *需求：在request域中有一个存在User对象的List集合。需要使用jstl+el将list集合数据展示到jsp页面的表格table中
+
