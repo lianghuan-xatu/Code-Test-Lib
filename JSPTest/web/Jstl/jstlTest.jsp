@@ -31,12 +31,24 @@
     </tr>
     <%--数据行--%>
     <c:forEach items="${list}" var="user" varStatus="s">
-        <tr>
-            <td>${s.count}</td>
-            <td>${user.name}</td>
-            <td>${user.age}</td>
-            <td>${user.birthday}</td>
-        </tr>
+
+        <c:if test="s.count%2==0">
+            <tr bgcolor="red">
+                <td>${s.count}</td>
+                <td>${user.name}</td>
+                <td>${user.age}</td>
+                <td>${user.birStr}</td>
+            </tr>
+        </c:if>
+        <c:if test="s.count%2!=0">
+            <tr bgcolor="#7fffd4">
+                <td>${s.count}</td>
+                <td>${user.name}</td>
+                <td>${user.age}</td>
+                <td>${user.birStr}</td>
+            </tr>
+        </c:if>
+
     </c:forEach>
 </table>
 
