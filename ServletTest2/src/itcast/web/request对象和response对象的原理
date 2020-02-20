@@ -270,7 +270,7 @@ http://localhost/day14/demo1-------请求（请求消息）--》    1、tomcat�
         1、代表整个Web应用，可以和程序的容器（服务器）来同信
         2、获取：
             1、通过request对象获取
-               reques.getServletContext();
+               request.getServletContext();
             2、通过HttpServlet获取
                 this.getServletContext();
 
