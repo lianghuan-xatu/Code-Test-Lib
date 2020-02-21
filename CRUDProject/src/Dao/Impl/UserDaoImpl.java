@@ -48,4 +48,56 @@ public class UserDaoImpl implements UserDao {
         jdbcTemplate.update(sql,user.getName(),user.getGender(),user.getAge(),user.getAddress(),user.getQq(),user.getEmail());
 
     }
+
+    @Override
+    public void deleteUser(int id) {
+        DataSource dataSource = JDBCUtils.getDataSource();
+        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
+        //定义sql
+        String sql="delete from student where id = ?";
+        jdbcTemplate.update(sql,id);
+    }
+
+    @Override
+    public User findUserById(int id) {
+        DataSource dataSource = JDBCUtils.getDataSource();
+        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
+        //定义sql
+        String sql="select * from student where id = ?";
+        User user = jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<User>(User.class),id);
+        return user;
+    }
+
+    @Override
+    public void updateUser(User user) {
+        DataSource dataSource = JDBCUtils.getDataSource();
+        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
+        //定义sql
+        String sql="update student set name = ? ,gender = ?,age = ?,address = ?,qq = ?,email = ? where id =?";
+        jdbcTemplate.update(sql,user.getName(),user.getGender(),user.getAge(),user.getAddress(),user.getQq(),user.getEmail(),user.getId());
+
+
+    }
+
+    @Override
+    public int findTotalCount(int currentPage, int rows) {
+        DataSource dataSource = JDBCUtils.getDataSource();
+        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
+        //定义sql
+        String sql="select count(*) from student";
+        int count = jdbcTemplate.queryForObject(sql, Integer.class);
+
+        return count;
+    }
+
+    @Override
+    public List<User> findPageList(int start, int rows) {
+        DataSource dataSource = JDBCUtils.getDataSource();
+        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
+        //定义sql
+        String sql="select * from student limit ?,?";
+        List<User> list = jdbcTemplate.query(sql, new BeanPropertyRowMapper<User>(User.class), start, rows);
+
+        return list;
+    }
 }
