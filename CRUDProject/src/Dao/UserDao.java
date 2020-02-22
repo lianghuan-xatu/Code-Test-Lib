@@ -1,9 +1,9 @@
 package Dao;
 
 import Domain.User;
-import org.springframework.jdbc.support.CustomSQLErrorCodesTranslation;
 
 import java.util.List;
+import java.util.Map;
 
 public interface UserDao {
     public List<User> findAll();
@@ -18,7 +18,7 @@ public interface UserDao {
 
     public void updateUser(User user);
 
-    public int findTotalCount(int currentPage, int rows);
+    public int findTotalCount(int currentPage, int rows, Map<String, String[]> parameterMap);
 
-    public List<User> findPageList(int start, int rows);
+    public List<User> findPageList(int start, int rows, Map<String, String[]> parameterMap);
 }

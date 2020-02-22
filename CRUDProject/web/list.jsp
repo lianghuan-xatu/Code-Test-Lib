@@ -30,18 +30,18 @@
 <div class="container">
     <h3 style="text-align: center">用户信息列表</h3>
     <div style="float: left">
-        <form class="form-inline">
+        <form class="form-inline" action="${pageContext.request.contextPath}/findByPageServlet">
             <div class="form-group">
                 <label for="exampleInputName2">姓名</label>
-                <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                <input type="text" class="form-control" name="name" value="${map.name[0]}" id="exampleInputName2" placeholder="Jane Doe">
             </div>
             <div class="form-group">
                 <label for="exampleInputaddress2">籍贯</label>
-                <input type="email" class="form-control" id="exampleInputaddress2" placeholder="jane.doe@example.com">
+                <input type="email" class="form-control" name="address" value="${map.address[0]}" id="exampleInputaddress2" placeholder="jane.doe@example.com">
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail2">邮箱</label>
-                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+                <input type="email" class="form-control" name="email" value="${map.email[0]}" id="exampleInputEmail2" placeholder="jane.doe@example.com">
             </div>
             <button type="submit" class="btn btn-default">查询</button>
         </form>
@@ -63,7 +63,7 @@
             <th>邮箱</th>
             <th>操作</th>
         </tr>
-        <c:forEach items="${requestScope.users}" var="user" varStatus="s">
+        <c:forEach items="${pb.list}" var="user" varStatus="s">
             <tr>
                 <td><input type="checkbox" name="selected" value="${user.id}"></td>
                 <td>${s.count}</td>
@@ -80,23 +80,40 @@
     <div>
         <nav aria-label="Page navigation">
             <ul class="pagination">
-                <li>
-                    <a href="#" aria-label="Previous">
+               <%-- 设置分页条下限限制--%>
+                <c:if test="${pb.currentPage==1}">
+                    <li class="disabled">
+                </c:if>
+               <c:if test="${pb.currentPage!=1}">
+                   <li>
+               </c:if>
+                    <a href="${pageContext.request.contextPath}/findByPageServlet?currentPage=${pb.currentPage-1}&rows=5&name=${map.name[0]}&address=${map.address[0]}&email=${map.email[0]}" aria-label="Previous">
                         <span aria-hidden="true">&laquo;</span>
                     </a>
                 </li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li>
-                    <a href="#" aria-label="Next">
+<%--
+                设置分页条是否为激活状态--%>
+                <c:forEach begin="1" end="${pb.totalPage}" var="i">
+                    <c:if test="${pb.currentPage==i}">
+                        <li class="active">   </c:if>
+                    <c:if test="${pb.currentPage!=i}">
+                        <li>   </c:if>
+                    <a href="${pageContext.request.contextPath}/findByPageServlet?currentPage=${i}&rows=5&name=${map.name[0]}&address=${map.address[0]}&email=${map.email[0]}">${i}</a></li>
+
+                </c:forEach>
+                   <%-- 设置分页条上限限制--%>
+                    <c:if test="${pb.currentPage==pb.totalPage}">
+                    <li class="disabled">
+                        </c:if>
+                        <c:if test="${pb.currentPage!=pb.totalPage}">
+                    <li>
+                        </c:if>
+                    <a href="${pageContext.request.contextPath}/findByPageServlet?currentPage=${pb.currentPage+1}&rows=5&totalPage=${pb.totalPage}&name=${map.name[0]}&address=${map.address[0]}&email=${map.email[0]}" aria-label="Next">
                         <span aria-hidden="true">&raquo;</span>
                     </a>
                 </li>
                 <span style="font-size: 25px;margin-left: 5px">
-          共16条记录，共4页
+          共${pb.totalCount}条记录，共${pb.totalPage}页
         </span>
             </ul>
         </nav>
@@ -149,3 +166,5 @@
        }
 </script>
 </html>
+
+

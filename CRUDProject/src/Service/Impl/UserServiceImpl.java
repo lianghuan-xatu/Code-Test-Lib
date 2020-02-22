@@ -4,10 +4,9 @@ import Dao.UserDao;
 import Domain.PageBean;
 import Domain.User;
 import Service.UserService;
-import org.apache.commons.beanutils.BeanUtils;
 
-import javax.jws.soap.SOAPBinding;
 import java.util.List;
+import java.util.Map;
 
 public class UserServiceImpl implements UserService {
     UserDao dao = new UserDaoImpl();
@@ -48,25 +47,35 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public PageBean findByPage(String _currentPage, String _rows) {
+    public PageBean findByPage(String _currentPage, String _rows, Map<String, String[]> parameterMap) {
 
         int currentPage = Integer.parseInt(_currentPage);
         int rows = Integer.parseInt(_rows);
+        //设置左分页限制
+        if(currentPage<1){
+            currentPage=1;
+        }
         //创建空的PageBean对象
         PageBean<User> pb=new PageBean<>();
+
+        //调用dao查询总记录数
+        int totalCount=dao.findTotalCount(currentPage,rows,parameterMap);
+        //计算总页数
+        int totalPage=(totalCount % rows) == 0 ? totalCount/rows : (totalCount/rows)+1;
+        //设置分页右限制
+        if(currentPage>totalPage){
+            currentPage=totalPage;
+        }
         //设置参数
         pb.setCurrentPage(currentPage);
         pb.setRows(rows);
-        //调用dao查询总记录数
-        int totalCount=dao.findTotalCount(currentPage,rows);
-        //计算总页数
-        int totalPage=(totalCount % rows) == 0 ? totalCount/rows : (totalCount/rows)+1;
+
         pb.setTotalCount(totalCount);
         pb.setTotalPage(totalPage);
         //计算开始记录的索引
         int start=(currentPage-1)*rows;
         //调用daofindPageList查询结果集
-        pb.setList(dao.findPageList(start,rows));
+        pb.setList(dao.findPageList(start,rows,parameterMap));
         //返回PageBean对象
         return pb;
     }
