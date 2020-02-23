@@ -1,4 +1,4 @@
-package Web;
+package Web.Servlet;
 
 import Service.Impl.UserServiceImpl;
 import Service.UserService;

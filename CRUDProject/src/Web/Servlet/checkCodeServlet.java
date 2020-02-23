@@ -1,4 +1,4 @@
-package itcast.web.Session.Servlet;
+package Web.Servlet;
 
 import javax.imageio.ImageIO;
 import javax.servlet.ServletException;

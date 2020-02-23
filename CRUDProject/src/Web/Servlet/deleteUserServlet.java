@@ -1,6 +1,5 @@
-package Web;
+package Web.Servlet;
 
-import Domain.User;
 import Service.Impl.UserServiceImpl;
 import Service.UserService;
 
@@ -11,14 +10,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/findUserServlet")
-public class findUserServlet extends HttpServlet {
+@WebServlet("/deleteUserServlet")
+public class deleteUserServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        UserService userService = new UserServiceImpl();
         String id = request.getParameter("id");
-        UserService userService=new UserServiceImpl();
-        User user = userService.findUserById(id);
-        request.setAttribute("user",user);
-        request.getRequestDispatcher("update.jsp").forward(request,response);
+        userService.deleteUser(id);
+        response.sendRedirect(request.getContextPath()+"/userListServlet");
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

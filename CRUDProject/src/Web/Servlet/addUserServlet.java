@@ -1,4 +1,4 @@
-package Web;
+package Web.Servlet;
 
 import Domain.User;
 import Service.Impl.UserServiceImpl;

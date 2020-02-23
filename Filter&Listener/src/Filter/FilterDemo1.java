@@ -5,7 +5,7 @@ import javax.servlet.annotation.WebFilter;
 import java.io.IOException;
 
 //导入javax.servlet下的Filter
-@WebFilter("/*")    //访问所有资源之前，都会执行该过滤器
+/*@WebFilter("/*") */   //访问所有资源之前，都会执行该过滤器
 public class FilterDemo1 implements Filter
 {
 

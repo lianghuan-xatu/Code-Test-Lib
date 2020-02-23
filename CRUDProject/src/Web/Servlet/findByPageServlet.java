@@ -1,4 +1,4 @@
-package Web;
+package Web.Servlet;
 
 import Domain.PageBean;
 import Domain.User;

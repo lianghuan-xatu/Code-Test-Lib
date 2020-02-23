@@ -89,7 +89,7 @@ public class UserDaoImpl implements UserDao {
         StringBuilder sb=new StringBuilder(sql);
         List<String> valueList=new ArrayList<>();
         for(String key:parameterMap.keySet()){
-            if(key.equals("currentPage")||key.equals("rows"))
+            if(key.equals("currentPage")||key.equals("rows")||key.equals("totalPage"))
                 continue;//  排除分页参数
             String value = parameterMap.get(key)[0];
             if((value!=null)&&(!value.equals(""))){
@@ -113,7 +113,7 @@ public class UserDaoImpl implements UserDao {
         StringBuilder sb=new StringBuilder(sql);
         List<Object> valueList=new ArrayList<>();
         for(String key:parameterMap.keySet()){
-            if(key.equals("currentPage")||key.equals("rows"))
+            if(key.equals("currentPage")||key.equals("rows")||key.equals("totalPage"))
                 continue;//  排除分页参数
             String value = parameterMap.get(key)[0];
             if((value!=null)&&(!value.equals(""))){
