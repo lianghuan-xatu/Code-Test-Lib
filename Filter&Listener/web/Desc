@@ -87,7 +87,11 @@
                             2、敏感词汇参考《敏感词汇.txt》
                             3、如果是敏感词汇，则替换为***
                       *分析：
-                            1、对request对象进行增强
+                            1、对request对象进行增强  获取增强参数相关方法
+                            2、放行  传递代理对象
+
+
+
                       *增强对象的功能：
                             *设计模式：一些通用的解决固定模式的方式
                                 1、装饰模式
@@ -104,3 +108,36 @@
                                                     2、代理对象=Proxy.newInstance();
                                                     3、实现代理对象调用方法
                                                     4、增强方法
+                                                *增强方式：
+                                                    1、增强参数列表
+                                                    2、增强返回值类型
+                                                    3、增强方法体执行逻辑
+
+## Listener:监听器
+        *概念：web的三大组件之一
+            *事件监听机制
+                *事件：一件事情
+                *事件源：事件发生的地方
+                *监听器：一个对象
+                *注册监听：将事件、事件源、监听器绑定在一起。当事件源上发生某个事件后，执行监听器代码
+        *ServletContextListener:监听ServletContext对象的创建和销毁
+            *void contextDestoryed(ServletContextEvent sce): ServletContext对象被销毁之前会调用该方法
+            *void contextInitialized(ServletContextEvent sce):ServletContext对象创建后会调用该方法
+            *步骤：
+                1、定义一个类，实现ServletContextListener接口
+                2、复写方法
+                3、配置
+                    1、web.xml
+                    <!--  配置监听器-->
+                      <listener>
+                        <listener-class>Listener.ContextLoaderListener</listener-class>
+                      </listener>
+                    <!--  指定初始化参数-->
+                      <context-param>
+                        <param-name>contextConfigLocation</param-name>
+                        <param-value>/WEB-INF/classes/applicationContext.xml</param-value>
+                      </context-param>
+
+                    2、注解
+                        /*
+                        @WebListener*/

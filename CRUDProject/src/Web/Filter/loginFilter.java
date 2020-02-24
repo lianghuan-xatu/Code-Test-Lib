@@ -1,4 +1,4 @@
-package Web;
+package Web.Filter;
 
 import com.sun.deploy.net.HttpRequest;
 
