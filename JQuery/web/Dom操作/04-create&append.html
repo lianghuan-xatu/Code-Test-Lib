@@ -30,14 +30,28 @@
 			}
 	 </style>
 	 <script type="text/javascript">
-		 // <input type="button" value="将反恐放置到city的后面"  id="b1"/>
+		 	$(function () {
+				// <input type="button" value="将反恐放置到city的后面"  id="b1"/>
+					$("#b1").click(function () {
+						$("#city").append($("#fk"));
+					});
+				// <input type="button" value="将反恐放置到city的最前面"  id="b2"/>
+				$("#b2").click(function () {
+					$("#city").prepend($("#fk"))
+					$("#fk").appendTo($("#city"));
+				});
+				// <input type="button" value="将反恐插入到天津后面"  id="b3"/>
+				$("#b3").click(function () {
+					$("#city").after($("#fk"));
+					$("#fk").insertAfter($("#city"));
+				});
+				// <input type="button" value="将反恐插入到天津前面"  id="b4"/>
+				$("#b4").click(function () {
+					$("#city").before($("#fk"));
+					$("#fk").insertBefore($("#city"));
+				});
 
-		 // <input type="button" value="将反恐放置到city的最前面"  id="b2"/>
-
-		 // <input type="button" value="将反恐插入到天津后面"  id="b3"/>
-
-		 // <input type="button" value="将反恐插入到天津前面"  id="b4"/>
-		 
+			});
 
 		
 	</script>
