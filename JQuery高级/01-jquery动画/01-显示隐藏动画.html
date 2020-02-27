@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script>
+        //隐藏div
+        function hideFn() {
+            $("#showDiv").hide("slow","swing",function () {
+                    alert("隐藏了");
+            });
+        }
+        //显示div
+        function showFn() {
+            $("#showDiv").show("slow","swing",function () {
+                alert("显示了");
+            });
+        }
+
+        //切换显示隐藏div
+        function toggleFn() {
+            $("#showDiv").toggle("slow");
+        }
+  /*      动画
+        1. 三种方式显示和隐藏元素
+        1. 默认显示和隐藏方式
+        1. show([speed],[easing],[fn])
+        1. 参数：
+						1. speed：动画的速度。三个预定义的值("slow","normal", "fast")或表示动画时长的毫秒数值(如：1000)
+        2. easing：用来指定切换效果，默认是"swing"，可用参数"linear"
+        * swing：动画执行时效果是 先慢，中间快，最后又慢
+        * linear：动画执行时速度是匀速的
+        3. fn：在动画完成时执行的函数，每个元素执行一次。
+
+				2. hide([speed,[easing],[fn]])
+        3. toggle([speed],[easing],[fn])
+
+        2. 滑动显示和隐藏方式
+        1. slideDown([speed],[easing],[fn])
+        2. slideUp([speed,[easing],[fn]])
+        3. slideToggle([speed],[easing],[fn])
+
+        3. 淡入淡出显示和隐藏方式
+        1. fadeIn([speed],[easing],[fn])
+        2. fadeOut([speed],[easing],[fn])
+        3. fadeToggle([speed,[easing],[fn]])
+
+*/
+    </script>
+</head>
+<body>
+<input type="button" value="点击按钮隐藏div" onclick="hideFn()">
+<input type="button" value="点击按钮显示div" onclick="showFn()">
+<input type="button" value="点击按钮切换div显示和隐藏" onclick="toggleFn()">
+
+<div id="showDiv" style="width:300px;height:300px;background:pink">
+    div显示和隐藏
+</div>
+</body>
+</html>
