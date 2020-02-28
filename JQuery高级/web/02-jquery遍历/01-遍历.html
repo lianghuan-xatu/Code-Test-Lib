@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(function () {
+            //1、获取所有ul下的li
+            var citys = $("#city li");
+            //遍历li
+            /*for(var i=0;i<citys.length;i++){
+                //获取内容
+                if("上海"==citys[i].innerHTML){
+                //break;   结束循环
+                    continue;//结束本次循环  进行下次循环
+            }
+                alert(i+":"+citys[i].innerHTML);
+
+            }*/
+            //2、jq对象.each(call back)
+            citys.each(function (index,element) {
+                //3.1获取li对象  第一种方式this
+                //alert(this.innerHTML);
+
+                //3.2、获取li对象 第二种方式  在回调函数中定义参数  index(索引)  element(元素对象)
+                //alert(index+":"+element.innerHTML);
+                //判断如果是上海  结束循环
+                if("上海"==$(element).html()){}
+                //如果当前function返回为false，则结束循环（break）
+                //如果返回为true，结束本次循环，继续下次循环（continue）
+                return false;
+                alert(index+":"+$(element).html());
+            });
+            //3、$.each(object,[callback])
+            $.each(citys,function () {
+                    alert($(this).innerHTML);
+            });
+            //4、for ....of:jquery  3.0版本之后提供的方式
+
+            let li;
+            for (li of citys){
+                alert($(li).innerHTML);
+            }
+        });
+
+    </script>
+</head>
+<body>
+<ul id="city">
+    <li>北京</li>
+    <li>上海</li>
+    <li>天津</li>
+    <li>重庆</li>
+</ul>
+</body>
+</html>
