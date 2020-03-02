@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        var person ={"name":"张三","age":23,"gender":"男"};
+            alert(person);
+            //获取name的值
+       var name = person.name;
+        var name2 = person["name"];
+
+
+
+            var persons={"persons":[
+                {"name":"张三","age":23,"gender":"男"},
+                    {"name":"；李四","age":23,"gender":"男"},
+                    {"name":"王五","age":23,"gender":"男"}]
+            };
+            var name1 = persons.persons[2].name;
+            alert(name1);
+         var ps=   [
+            {"name":"张三","age":23,"gender":"男"},
+            {"name":"；李四","age":23,"gender":"男"},
+            {"name":"王五","age":23,"gender":"男"}];
+        var name3 = ps[1].name;
+        //获取person 对象中所有键和值
+        //for in 循环
+        for(var key in person){
+            alert(key);
+            alert(person[key]);
+        }
+        //获取ps中的值
+        for(var i=0;i<ps.length;i++){
+            var p=ps[i];
+            for(var key in p){
+                alert(key+":"+p[key]);
+            }
+        }
+
+
+
+    </script>
+</head>
+<body>
+
+
+</body>
+</html>
