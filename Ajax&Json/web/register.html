@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        //在页面加载完成后
+        $(function () {
+                //给username绑定脱焦事件
+            $("#username").blur(function () {
+                //获取文本输入框的值
+                var username = $(this).val();
+                //发送Ajax请求
+                //期望服务器响应回的数据格式：json 包含错误信息
+                $.get("/Test4/findUserServlet",{username:username},function (data) {
+                    alert(data);
+                    var span=$("#username_msg");
+                    //判断userExsit键的值是否是true
+                    if(data.userExsit){
+                        //用户名存在
+                        span.css("color","red");
+                        span.html(data.userMsg);
+                    }else{
+                        span.css("color","green");
+                        span.html(data.userMsg);
+                    }
+
+                },"json");
+
+            });
+        });
+    </script>
+</head>
+<body>
+    <form id="form">
+        <input type="text" name="username" id="username" placeholder="请输入用户名"><br>
+        <span id="username_msg"></span>
+        <input type="password" name="password" placeholder="请输入密码"><br>
+        <input type="submit" value="注册"><br>
+    </form>
+</body>
+</html>
