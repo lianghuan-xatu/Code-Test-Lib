@@ -2,6 +2,7 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/maven_web" />
+    <file type="web" url="file://$PROJECT_DIR$/Mybatis" />
     <file type="web" url="file://$PROJECT_DIR$/travel" />
     <file type="web" url="file://$PROJECT_DIR$/../maven_web" />
   </component>
@@ -12,6 +13,8 @@
         <option value="$PROJECT_DIR$/java_maven/pom.xml" />
         <option value="$PROJECT_DIR$/../maven_web/pom.xml" />
         <option value="$PROJECT_DIR$/maven_web/pom.xml" />
+        <option value="$PROJECT_DIR$/travel/pom.xml" />
+        <option value="$PROJECT_DIR$/Mybatis/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

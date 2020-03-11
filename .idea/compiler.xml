@@ -6,7 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Mybatis" />
         <module name="maven_web" />
+        <module name="travel" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -16,7 +18,8 @@
       <module name="maven_java2" target="1.5" />
       <module name="maven_web" target="1.8" />
       <module name="mavenTest" target="1.7" />
-      <module name="travel" target="1.8" />
+      <module name="Mybatis" target="1.8" />
+      <module name="travel" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

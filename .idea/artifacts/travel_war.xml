@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="travel-1.0-SNAPSHOT.war">
+    <root id="archive" name="travel.war">
       <element id="artifact" artifact-name="travel:war exploded" />
     </root>
   </artifact>
