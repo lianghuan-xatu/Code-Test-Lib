@@ -9,7 +9,9 @@
       <module fileurl="file://$PROJECT_DIR$/JQuery高级/JQuery高级.iml" filepath="$PROJECT_DIR$/JQuery高级/JQuery高级.iml" />
       <module fileurl="file://$PROJECT_DIR$/JSPTest/JSPTest.iml" filepath="$PROJECT_DIR$/JSPTest/JSPTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaWeb2/JavaWeb2.iml" filepath="$PROJECT_DIR$/JavaWeb2/JavaWeb2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Mybatis/Mybatis.iml" filepath="$PROJECT_DIR$/Mybatis/Mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatis01/MyBatis01.iml" filepath="$PROJECT_DIR$/MyBatis01/MyBatis01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mybatis02/Mybatis.iml" filepath="$PROJECT_DIR$/Mybatis02/Mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mybatis03/Mybatis03.iml" filepath="$PROJECT_DIR$/Mybatis03/Mybatis03.iml" />
       <module fileurl="file://$PROJECT_DIR$/ServletTest/ServletTest.iml" filepath="$PROJECT_DIR$/ServletTest/ServletTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/ServletTest2/ServletTest2.iml" filepath="$PROJECT_DIR$/ServletTest2/ServletTest2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sever/Sever.iml" filepath="$PROJECT_DIR$/Sever/Sever.iml" />
