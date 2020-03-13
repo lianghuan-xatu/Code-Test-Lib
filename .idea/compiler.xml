@@ -7,10 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Mybatis03" />
-        <module name="MyBatis01" />
-        <module name="Mybatis" />
         <module name="maven_web" />
+        <module name="MyBatis06" />
         <module name="travel" />
+        <module name="Mybatis" />
+        <module name="MyBatis01" />
+        <module name="MyBatis04" />
+        <module name="MyBatis05" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -24,6 +27,9 @@
       <module name="MyBatis01" target="1.7" />
       <module name="MyBatis02" target="1.7" />
       <module name="Mybatis03" target="1.7" />
+      <module name="MyBatis04" target="1.7" />
+      <module name="MyBatis05" target="1.7" />
+      <module name="MyBatis06" target="1.7" />
       <module name="travel" target="1.7" />
     </bytecodeTargetLevel>
   </component>
