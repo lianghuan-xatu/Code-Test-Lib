@@ -1,17 +1,17 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="MyBatis06:war exploded">
-    <output-path>$PROJECT_DIR$/MyBatis06/target/MyBatis06</output-path>
+  <artifact type="exploded-war" name="MyBatis07_JNDI:war exploded">
+    <output-path>$PROJECT_DIR$/MyBatis07_JNDI/target/MyBatis07_JNDI</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>
-        <module>MyBatis06</module>
+        <module>MyBatis07_JNDI</module>
         <packaging>war</packaging>
       </options>
     </properties>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="MyBatis06" />
+          <element id="module-output" name="MyBatis07_JNDI" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.4.5" />
@@ -20,9 +20,9 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/MyBatis06/target/MyBatis06/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/MyBatis07_JNDI/target/MyBatis07_JNDI/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="MyBatis06/web/Web" />
+      <element id="javaee-facet-resources" facet="MyBatis07_JNDI/web/Web" />
     </root>
   </artifact>
 </component>

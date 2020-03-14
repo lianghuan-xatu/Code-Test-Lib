@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="MyBatis6.war">
+    <root id="archive" name="MyBatis06.war">
       <element id="artifact" artifact-name="MyBatis06:war exploded" />
     </root>
   </artifact>

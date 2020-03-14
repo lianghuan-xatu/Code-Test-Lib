@@ -2,40 +2,26 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
- <mapper namespace="com.itcast.dao.IRoleDao" >
+<mapper namespace="com.itcast.dao.IRoleDao">
 
-
-  <!--  了解内容：抽取重复的sql语句   -->
-    <sql id="defaultUser">
-        select * from user
-    </sql>
-<!-- 然后再select语句中引入
-    <include refid="defaultUser"></include>
-    -->
-
-
-    <resultMap id="roleMap" type="com.itcast.domain.Role">
+    <!--定义role表的ResultMap-->
+    <resultMap id="roleMap" type="role">
         <id property="roleId" column="rid"></id>
         <result property="roleName" column="role_name"></result>
         <result property="roleDesc" column="role_desc"></result>
-        <collection property="users" ofType="com.itcast.domain.User">
-            <id property="id" column="id"></id>
-            <result property="username" column="username"></result>
-            <result property="birthday" column="birthday"></result>
-            <result property="sex" column="sex"></result>
-            <result property="address" column="address"></result>
+        <collection property="users" ofType="user">
+            <id column="id" property="id"></id>
+            <result column="username" property="username"></result>
+            <result column="address" property="address"></result>
+            <result column="sex" property="sex"></result>
+            <result column="birthday" property="birthday"></result>
         </collection>
-
     </resultMap>
 
-   <!-- 查询所有-->
+    <!--查询所有-->
     <select id="findAll" resultMap="roleMap">
-     select u.*,r.id as rid,r.role_name,r.role_desc from role as r
-    left outer join user_role as ur on r.id=ur.rid
-    left outer join user as u on u.id=ur.uid;
+       select u.*,r.id as rid,r.role_name,r.role_desc from role r
+        left outer join user_role ur  on r.id = ur.rid
+        left outer join user u on u.id = ur.uid
     </select>
-
-
-    
-
 </mapper>

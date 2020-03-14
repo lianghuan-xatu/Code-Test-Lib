@@ -6,12 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="MyBatis11_annotation" />
         <module name="Mybatis03" />
         <module name="maven_web" />
+        <module name="MyBatis10_annotation" />
         <module name="MyBatis06" />
         <module name="travel" />
         <module name="Mybatis" />
+        <module name="MyBatis07_JNDI" />
+        <module name="MyBatis08_Lazy" />
         <module name="MyBatis01" />
+        <module name="MyBatis09_Cache" />
         <module name="MyBatis04" />
         <module name="MyBatis05" />
       </profile>
@@ -30,6 +35,11 @@
       <module name="MyBatis04" target="1.7" />
       <module name="MyBatis05" target="1.7" />
       <module name="MyBatis06" target="1.7" />
+      <module name="MyBatis07_JNDI" target="1.7" />
+      <module name="MyBatis08_Lazy" target="1.7" />
+      <module name="MyBatis09_Cache" target="1.7" />
+      <module name="MyBatis10_annotation" target="1.7" />
+      <module name="MyBatis11_annotation" target="1.7" />
       <module name="travel" target="1.7" />
     </bytecodeTargetLevel>
   </component>

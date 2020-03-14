@@ -13,6 +13,11 @@
       <module fileurl="file://$PROJECT_DIR$/MyBatis04/MyBatis04.iml" filepath="$PROJECT_DIR$/MyBatis04/MyBatis04.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis05/MyBatis05.iml" filepath="$PROJECT_DIR$/MyBatis05/MyBatis05.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis06/MyBatis06.iml" filepath="$PROJECT_DIR$/MyBatis06/MyBatis06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatis07_JNDI/MyBatis07_JNDI.iml" filepath="$PROJECT_DIR$/MyBatis07_JNDI/MyBatis07_JNDI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatis08_Lazy/MyBatis08_Lazy.iml" filepath="$PROJECT_DIR$/MyBatis08_Lazy/MyBatis08_Lazy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatis09_Cache/MyBatis09_Cache.iml" filepath="$PROJECT_DIR$/MyBatis09_Cache/MyBatis09_Cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatis10_annotation/MyBatis10_annotation.iml" filepath="$PROJECT_DIR$/MyBatis10_annotation/MyBatis10_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatis11_annotation/MyBatis11_annotation.iml" filepath="$PROJECT_DIR$/MyBatis11_annotation/MyBatis11_annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/Mybatis02/Mybatis.iml" filepath="$PROJECT_DIR$/Mybatis02/Mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/Mybatis03/Mybatis03.iml" filepath="$PROJECT_DIR$/Mybatis03/Mybatis03.iml" />
       <module fileurl="file://$PROJECT_DIR$/ServletTest/ServletTest.iml" filepath="$PROJECT_DIR$/ServletTest/ServletTest.iml" />

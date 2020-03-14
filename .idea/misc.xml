@@ -7,6 +7,11 @@
     <file type="web" url="file://$PROJECT_DIR$/MyBatis04" />
     <file type="web" url="file://$PROJECT_DIR$/MyBatis05" />
     <file type="web" url="file://$PROJECT_DIR$/MyBatis06" />
+    <file type="web" url="file://$PROJECT_DIR$/MyBatis07_JNDI" />
+    <file type="web" url="file://$PROJECT_DIR$/MyBatis08_Lazy" />
+    <file type="web" url="file://$PROJECT_DIR$/MyBatis09_Cache" />
+    <file type="web" url="file://$PROJECT_DIR$/MyBatis10_annotation" />
+    <file type="web" url="file://$PROJECT_DIR$/MyBatis11_annotation" />
     <file type="web" url="file://$PROJECT_DIR$/travel" />
     <file type="web" url="file://$PROJECT_DIR$/../maven_web" />
   </component>
@@ -23,8 +28,14 @@
         <option value="$PROJECT_DIR$/Mybatis02/pom.xml" />
         <option value="$PROJECT_DIR$/Mybatis03/pom.xml" />
         <option value="$PROJECT_DIR$/MyBatis04/pom.xml" />
-        <option value="$PROJECT_DIR$/MyBatis05/pom.xml" />
         <option value="$PROJECT_DIR$/MyBatis6/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatis06/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatis05/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatis07_JNDI/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatis08_Lazy/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatis09_Cache/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatis10_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatis11_annotation/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -5,11 +5,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
-  <artifactId>MyBatis06</artifactId>
+  <artifactId>MyBatis07_JNDI</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>MyBatis06 Maven Webapp</name>
+  <name>MyBatis07_JNDI Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -27,7 +27,10 @@
       <scope>test</scope>
     </dependency>
 
-   <dependency>
+
+
+
+    <dependency>
       <groupId>org.mybatis</groupId>
       <artifactId>mybatis</artifactId>
       <version>3.4.5</version>
@@ -45,10 +48,11 @@
       <version>1.2.12</version>
     </dependency>
 
+
   </dependencies>
 
   <build>
-    <finalName>MyBatis06</finalName>
+    <finalName>MyBatis07_JNDI</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>

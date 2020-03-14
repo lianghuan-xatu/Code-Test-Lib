@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="MyBatis08_Lazy:war">
+    <output-path>$PROJECT_DIR$/MyBatis08_Lazy/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>MyBatis08_Lazy</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="MyBatis08_Lazy.war">
+      <element id="artifact" artifact-name="MyBatis08_Lazy:war exploded" />
+    </root>
+  </artifact>
+</component>
