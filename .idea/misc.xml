@@ -12,6 +12,10 @@
     <file type="web" url="file://$PROJECT_DIR$/MyBatis09_Cache" />
     <file type="web" url="file://$PROJECT_DIR$/MyBatis10_annotation" />
     <file type="web" url="file://$PROJECT_DIR$/MyBatis11_annotation" />
+    <file type="web" url="file://$PROJECT_DIR$/Spring_01factory" />
+    <file type="web" url="file://$PROJECT_DIR$/Spring_02spring" />
+    <file type="web" url="file://$PROJECT_DIR$/Spring_03bean" />
+    <file type="web" url="file://$PROJECT_DIR$/Spring_04DI" />
     <file type="web" url="file://$PROJECT_DIR$/travel" />
     <file type="web" url="file://$PROJECT_DIR$/../maven_web" />
   </component>
@@ -36,6 +40,10 @@
         <option value="$PROJECT_DIR$/MyBatis09_Cache/pom.xml" />
         <option value="$PROJECT_DIR$/MyBatis10_annotation/pom.xml" />
         <option value="$PROJECT_DIR$/MyBatis11_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_01factory/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_02spring/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_03bean/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_04DI/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

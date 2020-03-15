@@ -23,6 +23,10 @@
       <module fileurl="file://$PROJECT_DIR$/ServletTest/ServletTest.iml" filepath="$PROJECT_DIR$/ServletTest/ServletTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/ServletTest2/ServletTest2.iml" filepath="$PROJECT_DIR$/ServletTest2/ServletTest2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sever/Sever.iml" filepath="$PROJECT_DIR$/Sever/Sever.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring_01factory/Spring_01factory.iml" filepath="$PROJECT_DIR$/Spring_01factory/Spring_01factory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring_02spring/Spring_02spring.iml" filepath="$PROJECT_DIR$/Spring_02spring/Spring_02spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring_03bean/Spring_03bean.iml" filepath="$PROJECT_DIR$/Spring_03bean/Spring_03bean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring_04DI/Spring_04DI.iml" filepath="$PROJECT_DIR$/Spring_04DI/Spring_04DI.iml" />
       <module fileurl="file://$PROJECT_DIR$/TomcatTest/TomcatTest.iml" filepath="$PROJECT_DIR$/TomcatTest/TomcatTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven_web/maven_web.iml" filepath="$PROJECT_DIR$/maven_web/maven_web.iml" />
       <module fileurl="file://$PROJECT_DIR$/redis/redis.iml" filepath="$PROJECT_DIR$/redis/redis.iml" />
