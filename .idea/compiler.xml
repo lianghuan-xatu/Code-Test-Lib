@@ -7,20 +7,23 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Spring_03bean" />
-        <module name="MyBatis07_JNDI" />
+        <module name="Spring_01factory" />
+        <module name="Spring_07annoioc" />
         <module name="MyBatis06" />
-        <module name="MyBatis05" />
+        <module name="maven_web" />
         <module name="MyBatis04" />
         <module name="MyBatis01" />
         <module name="MyBatis09_Cache" />
         <module name="Spring_02spring" />
-        <module name="maven_web" />
+        <module name="MyBatis05" />
+        <module name="Spring_05anno_IOC" />
         <module name="travel" />
+        <module name="Spring_06account_xmlioc" />
         <module name="MyBatis11_annotation" />
+        <module name="MyBatis07_JNDI" />
         <module name="MyBatis08_Lazy" />
-        <module name="Spring_01factory" />
-        <module name="Mybatis03" />
         <module name="MyBatis10_annotation" />
+        <module name="Mybatis03" />
         <module name="Spring_04DI" />
         <module name="Mybatis" />
       </profile>
@@ -48,6 +51,9 @@
       <module name="Spring_02spring" target="1.7" />
       <module name="Spring_03bean" target="1.7" />
       <module name="Spring_04DI" target="1.7" />
+      <module name="Spring_05anno_IOC" target="1.7" />
+      <module name="Spring_06account_xmlioc" target="1.7" />
+      <module name="Spring_07annoioc" target="1.7" />
       <module name="travel" target="1.7" />
     </bytecodeTargetLevel>
   </component>
