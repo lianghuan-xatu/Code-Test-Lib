@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Spring_08account_withoutxml:war exploded">
+    <output-path>$PROJECT_DIR$/Spring_08account_withoutxml/target/Spring_08account_withoutxml</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>Spring_08account_withoutxml</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Spring_08account_annoIOCwithoutxml" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/Spring_08account_annoIOCwithoutxml/target/Spring_08account_withoutxml/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="Spring_08account_annoIOCwithoutxml/web/Web" />
+    </root>
+  </artifact>
+</component>

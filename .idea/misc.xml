@@ -18,6 +18,9 @@
     <file type="web" url="file://$PROJECT_DIR$/Spring_04DI" />
     <file type="web" url="file://$PROJECT_DIR$/Spring_05anno_IOC" />
     <file type="web" url="file://$PROJECT_DIR$/Spring_06account_xmlioc" />
+    <file type="web" url="file://$PROJECT_DIR$/Spring_08account_annoIOC_withoutxml" />
+    <file type="web" url="file://$PROJECT_DIR$/Spring_08account_annoIOCwithoutxml" />
+    <file type="web" url="file://$PROJECT_DIR$/Spring_09_account" />
     <file type="web" url="file://$PROJECT_DIR$/travel" />
     <file type="web" url="file://$PROJECT_DIR$/../maven_web" />
   </component>
@@ -49,11 +52,15 @@
         <option value="$PROJECT_DIR$/Spring_05anno_IOC/pom.xml" />
         <option value="$PROJECT_DIR$/Spring_06account_xmlioc/pom.xml" />
         <option value="$PROJECT_DIR$/Spring_07annoioc/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_08account_withoutxml/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_08account_annoIOC_withoutxml/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring09_account/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/Mybatis/MyBatis02/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_08account_annoIOCwithoutxml/pom.xml" />
         <option value="$PROJECT_DIR$/maven_web/pom.xml" />
       </set>
     </option>

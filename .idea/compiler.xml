@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Spring_03bean" />
         <module name="Spring_01factory" />
+        <module name="Spring_09_account" />
         <module name="Spring_07annoioc" />
         <module name="MyBatis06" />
         <module name="maven_web" />
@@ -15,15 +16,16 @@
         <module name="MyBatis01" />
         <module name="MyBatis09_Cache" />
         <module name="Spring_02spring" />
-        <module name="MyBatis05" />
         <module name="Spring_05anno_IOC" />
+        <module name="Spring_08account_annoIOC_withoutxml" />
         <module name="travel" />
         <module name="Spring_06account_xmlioc" />
         <module name="MyBatis11_annotation" />
         <module name="MyBatis07_JNDI" />
+        <module name="Mybatis03" />
         <module name="MyBatis08_Lazy" />
         <module name="MyBatis10_annotation" />
-        <module name="Mybatis03" />
+        <module name="MyBatis05" />
         <module name="Spring_04DI" />
         <module name="Mybatis" />
       </profile>
@@ -54,6 +56,9 @@
       <module name="Spring_05anno_IOC" target="1.7" />
       <module name="Spring_06account_xmlioc" target="1.7" />
       <module name="Spring_07annoioc" target="1.7" />
+      <module name="Spring_08account_annoIOC_withoutxml" target="1.7" />
+      <module name="Spring_08account_annoIOCwithoutxml" target="1.7" />
+      <module name="Spring_09_account" target="1.7" />
       <module name="travel" target="1.7" />
     </bytecodeTargetLevel>
   </component>

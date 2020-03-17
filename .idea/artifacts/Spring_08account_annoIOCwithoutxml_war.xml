@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Spring_08account_annoIOCwithoutxml:war">
+    <output-path>$PROJECT_DIR$/Spring_08account_annoIOCwithoutxml/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Spring_08account_annoIOCwithoutxml</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Spring_08account_annoIOCwithoutxml.war">
+      <element id="artifact" artifact-name="Spring_08account_annoIOCwithoutxml:war exploded" />
+    </root>
+  </artifact>
+</component>
