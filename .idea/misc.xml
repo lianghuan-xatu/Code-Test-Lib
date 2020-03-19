@@ -22,6 +22,8 @@
     <file type="web" url="file://$PROJECT_DIR$/Spring_08account_annoIOCwithoutxml" />
     <file type="web" url="file://$PROJECT_DIR$/Spring_09_account" />
     <file type="web" url="file://$PROJECT_DIR$/Spring_10accountProxy" />
+    <file type="web" url="file://$PROJECT_DIR$/Spring_11accountProxy2" />
+    <file type="web" url="file://$PROJECT_DIR$/Spring_12AOP" />
     <file type="web" url="file://$PROJECT_DIR$/travel" />
     <file type="web" url="file://$PROJECT_DIR$/../maven_web" />
   </component>
@@ -58,6 +60,8 @@
         <option value="$PROJECT_DIR$/Spring09_account/pom.xml" />
         <option value="$PROJECT_DIR$/Spring_09_account/pom.xml" />
         <option value="$PROJECT_DIR$/Spring_10accountProxy/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_11accountProxy2/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_12AOP/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

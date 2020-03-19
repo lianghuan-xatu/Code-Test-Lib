@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Spring_12AOP:war">
+    <output-path>$PROJECT_DIR$/Spring_12AOP/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Spring_12AOP</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Spring_12AOP.war">
+      <element id="artifact" artifact-name="Spring_12AOP:war exploded" />
+    </root>
+  </artifact>
+</component>

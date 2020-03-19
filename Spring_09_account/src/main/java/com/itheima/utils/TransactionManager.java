@@ -24,32 +24,52 @@ public class TransactionManager {
      */
     public void beginTransaction() throws SQLException {
 
-        connectionUtils.getThreadConnection().setAutoCommit(false);
+        try{
+          connectionUtils.getThreadConnection().setAutoCommit(false);
+        }catch (Exception e){
+            throw new RuntimeException(e);
+        }
+
 
     }
 
     /**
      * 提交事务
      */
-    public void commit() throws SQLException {
-        connectionUtils.getThreadConnection().commit();
+    public void commit() {
+        try{
+            connectionUtils.getThreadConnection().commit();
+        }catch (Exception e){
+            throw new RuntimeException(e);
+        }
+
     }
 
 
     /**
      *  回滚事务
      */
-    public void rollback() throws SQLException {
-        connectionUtils.getThreadConnection().rollback();
+    public void rollback() {
+        try{
+            connectionUtils.getThreadConnection().rollback();
+        }catch (Exception e){
+            throw new RuntimeException(e);
+        }
+
     }
 
     /**
      * 释放连接
      */
-    public void release() throws SQLException {
+    public void release(){
 
+        try{
             connectionUtils.getThreadConnection().close();  //还回连接池中
             connectionUtils.removeConnection();
+        }catch (Exception e){
+            throw new RuntimeException(e);
+        }
+
 
     }
 

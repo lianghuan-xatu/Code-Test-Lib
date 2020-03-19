@@ -11,22 +11,24 @@
         <module name="Spring_09_account" />
         <module name="Spring_07annoioc" />
         <module name="Spring_10accountProxy" />
+        <module name="Spring_11accountProxy2" />
         <module name="MyBatis06" />
         <module name="maven_web" />
         <module name="MyBatis04" />
         <module name="MyBatis01" />
         <module name="Spring_08account_annoIOC_withoutxml" />
-        <module name="MyBatis11_annotation" />
         <module name="Spring_02spring" />
-        <module name="MyBatis05" />
+        <module name="MyBatis07_JNDI" />
         <module name="Spring_05anno_IOC" />
+        <module name="Spring_12AOP" />
         <module name="travel" />
         <module name="Spring_06account_xmlioc" />
+        <module name="MyBatis11_annotation" />
         <module name="MyBatis09_Cache" />
-        <module name="MyBatis07_JNDI" />
+        <module name="Mybatis03" />
         <module name="MyBatis08_Lazy" />
         <module name="MyBatis10_annotation" />
-        <module name="Mybatis03" />
+        <module name="MyBatis05" />
         <module name="Spring_04DI" />
         <module name="Mybatis" />
       </profile>
@@ -61,6 +63,8 @@
       <module name="Spring_08account_annoIOCwithoutxml" target="1.7" />
       <module name="Spring_09_account" target="1.7" />
       <module name="Spring_10accountProxy" target="1.7" />
+      <module name="Spring_11accountProxy2" target="1.7" />
+      <module name="Spring_12AOP" target="1.7" />
       <module name="travel" target="1.7" />
     </bytecodeTargetLevel>
   </component>
