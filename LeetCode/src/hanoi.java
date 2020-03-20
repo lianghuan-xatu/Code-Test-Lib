@@ -17,9 +17,11 @@ public static void hanoi(int n, char A, char B, char C) {
         hanoi(n - 1, B, A, C);// 按BAC数序执行N-1的汉诺塔移动
     }
 }
-
     private static void move(char A, char C) {//执行最大盘子的从A-C的移动
+
         System.out.println("move:" + A + "--->" + C);
     }
 
 }
+
+
