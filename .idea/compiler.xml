@@ -6,35 +6,36 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Spring_03bean" />
-        <module name="Spring_01factory" />
-        <module name="Spring_09_account" />
-        <module name="Spring_07annoioc" />
-        <module name="Spring_10accountProxy" />
-        <module name="Spring_11accountProxy2" />
-        <module name="SpringMVC_01quickstart" />
-        <module name="MyBatis06" />
-        <module name="maven_web" />
-        <module name="MyBatis04" />
-        <module name="MyBatis01" />
-        <module name="Spring_08account_annoIOC_withoutxml" />
-        <module name="MyBatis11_annotation" />
-        <module name="Spring_02spring" />
-        <module name="Spring_05anno_IOC" />
-        <module name="Spring_12AOP" />
-        <module name="Mybatis03" />
-        <module name="travel" />
         <module name="Spring_06account_xmlioc" />
-        <module name="MyBatis09_Cache" />
-        <module name="MyBatis07_JNDI" />
-        <module name="Spring_13annotationAOP" />
-        <module name="Spring_14tx_xml" />
+        <module name="MyBatis11_annotation" />
         <module name="MyBatis08_Lazy" />
-        <module name="MyBatis10_annotation" />
+        <module name="MyBatis06" />
         <module name="MyBatis05" />
-        <module name="Spring_15_tx_anno" />
+        <module name="MyBatis04" />
+        <module name="Spring_12AOP" />
+        <module name="MyBatis01" />
+        <module name="Spring_02spring" />
+        <module name="Spring_14tx_xml" />
         <module name="Spring_04DI" />
+        <module name="Mybatis03" />
+        <module name="Spring_01factory" />
+        <module name="SpringMVC_01quickstart" />
+        <module name="Spring_05anno_IOC" />
+        <module name="MyBatis09_Cache" />
+        <module name="travel" />
+        <module name="MyBatis10_annotation" />
+        <module name="Spring_15_tx_anno" />
+        <module name="Spring_11accountProxy2" />
+        <module name="Spring_03bean" />
+        <module name="MyBatis07_JNDI" />
+        <module name="maven_web" />
+        <module name="Spring_09_account" />
+        <module name="SpringMVC_02response" />
+        <module name="Spring_07annoioc" />
+        <module name="Spring_13annotationAOP" />
+        <module name="Spring_10accountProxy" />
         <module name="Mybatis" />
+        <module name="Spring_08account_annoIOC_withoutxml" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -75,6 +76,7 @@
       <module name="Spring_15_tx_anno" target="1.7" />
       <module name="Spring_15tx_anno" target="1.5" />
       <module name="SpringMVC_01quickstart" target="1.7" />
+      <module name="SpringMVC_02response" target="1.7" />
       <module name="travel" target="1.7" />
     </bytecodeTargetLevel>
   </component>

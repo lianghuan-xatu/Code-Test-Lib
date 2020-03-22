@@ -20,16 +20,6 @@
     </bean>
 
 
-  <!--  配置自定义类型转换器  -->
-    <bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
-        <property name="converters">
-            <set>
-                <bean class="com.itcast.utils.StringToDateConverter"></bean>
-            </set>
-        </property>
-    </bean>
-
-
-   <!-- 开启SpringMVC框架注解的支持-->
-    <mvc:annotation-driven conversion-service="conversionService"></mvc:annotation-driven>
+    <!-- 开启SpringMVC框架注解的支持-->
+    <mvc:annotation-driven ></mvc:annotation-driven>
 </beans>

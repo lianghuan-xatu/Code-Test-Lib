@@ -47,5 +47,10 @@
 
     <input type="submit" value="提交">
 </form>
+
+<a href="param/testServlet">Servlet原生的API</a>
+
+
+
 </body>
 </html>
