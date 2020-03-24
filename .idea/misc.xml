@@ -31,6 +31,7 @@
     <file type="web" url="file://$PROJECT_DIR$/Spring_15tx_anno" />
     <file type="web" url="file://$PROJECT_DIR$/SpringMVC_01quickstart" />
     <file type="web" url="file://$PROJECT_DIR$/SpringMVC_02response" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringMVC_03interceptor" />
     <file type="web" url="file://$PROJECT_DIR$/travel" />
     <file type="web" url="file://$PROJECT_DIR$/../maven_web" />
   </component>
@@ -74,6 +75,7 @@
         <option value="$PROJECT_DIR$/Spring_15_tx_anno/pom.xml" />
         <option value="$PROJECT_DIR$/SpringMVC_01quickstart/pom.xml" />
         <option value="$PROJECT_DIR$/SpringMVC_02response/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMVC_03interceptor/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

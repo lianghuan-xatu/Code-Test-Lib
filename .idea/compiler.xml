@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Spring_06account_xmlioc" />
         <module name="MyBatis11_annotation" />
+        <module name="travel" />
         <module name="MyBatis08_Lazy" />
         <module name="MyBatis06" />
         <module name="MyBatis05" />
@@ -22,7 +23,6 @@
         <module name="SpringMVC_01quickstart" />
         <module name="Spring_05anno_IOC" />
         <module name="MyBatis09_Cache" />
-        <module name="travel" />
         <module name="MyBatis10_annotation" />
         <module name="Spring_15_tx_anno" />
         <module name="Spring_11accountProxy2" />
@@ -34,6 +34,7 @@
         <module name="Spring_07annoioc" />
         <module name="Spring_13annotationAOP" />
         <module name="Spring_10accountProxy" />
+        <module name="SpringMVC_03interceptor" />
         <module name="Mybatis" />
         <module name="Spring_08account_annoIOC_withoutxml" />
       </profile>
@@ -77,6 +78,7 @@
       <module name="Spring_15tx_anno" target="1.5" />
       <module name="SpringMVC_01quickstart" target="1.7" />
       <module name="SpringMVC_02response" target="1.7" />
+      <module name="SpringMVC_03interceptor" target="1.7" />
       <module name="travel" target="1.7" />
     </bytecodeTargetLevel>
   </component>
