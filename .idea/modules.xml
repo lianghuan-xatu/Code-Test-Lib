@@ -21,6 +21,7 @@
       <module fileurl="file://$PROJECT_DIR$/MyBatis11_annotation/MyBatis11_annotation.iml" filepath="$PROJECT_DIR$/MyBatis11_annotation/MyBatis11_annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/Mybatis02/Mybatis.iml" filepath="$PROJECT_DIR$/Mybatis02/Mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/Mybatis03/Mybatis03.iml" filepath="$PROJECT_DIR$/Mybatis03/Mybatis03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SSM/SSM.iml" filepath="$PROJECT_DIR$/SSM/SSM.iml" />
       <module fileurl="file://$PROJECT_DIR$/ServletTest/ServletTest.iml" filepath="$PROJECT_DIR$/ServletTest/ServletTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/ServletTest2/ServletTest2.iml" filepath="$PROJECT_DIR$/ServletTest2/ServletTest2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sever/Sever.iml" filepath="$PROJECT_DIR$/Sever/Sever.iml" />

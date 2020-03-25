@@ -34,6 +34,7 @@
         <module name="Spring_07annoioc" />
         <module name="Spring_13annotationAOP" />
         <module name="Spring_10accountProxy" />
+        <module name="SSM" />
         <module name="SpringMVC_03interceptor" />
         <module name="Mybatis" />
         <module name="Spring_08account_annoIOC_withoutxml" />
@@ -79,6 +80,7 @@
       <module name="SpringMVC_01quickstart" target="1.7" />
       <module name="SpringMVC_02response" target="1.7" />
       <module name="SpringMVC_03interceptor" target="1.7" />
+      <module name="SSM" target="1.7" />
       <module name="travel" target="1.7" />
     </bytecodeTargetLevel>
   </component>
