@@ -18,10 +18,15 @@
         <module name="Spring_02spring" />
         <module name="Spring_14tx_xml" />
         <module name="Spring_04DI" />
+        <module name="ssm-service" />
+        <module name="ssm-dao" />
         <module name="Mybatis03" />
         <module name="Spring_01factory" />
         <module name="SpringMVC_01quickstart" />
+        <module name="ssm-web" />
+        <module name="ssm-utils" />
         <module name="Spring_05anno_IOC" />
+        <module name="maven高级" />
         <module name="MyBatis09_Cache" />
         <module name="MyBatis10_annotation" />
         <module name="Spring_15_tx_anno" />
@@ -30,6 +35,7 @@
         <module name="MyBatis07_JNDI" />
         <module name="maven_web" />
         <module name="Spring_09_account" />
+        <module name="ssm-domain" />
         <module name="SpringMVC_02response" />
         <module name="Spring_07annoioc" />
         <module name="Spring_13annotationAOP" />
@@ -41,12 +47,14 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="heima_ssm" target="1.5" />
       <module name="java_maven" target="1.5" />
       <module name="maven" target="1.5" />
       <module name="maven_java" target="1.5" />
       <module name="maven_java2" target="1.5" />
       <module name="maven_web" target="1.8" />
       <module name="mavenTest" target="1.7" />
+      <module name="maven高级" target="1.5" />
       <module name="Mybatis" target="1.8" />
       <module name="MyBatis01" target="1.7" />
       <module name="MyBatis02" target="1.7" />
@@ -81,6 +89,12 @@
       <module name="SpringMVC_02response" target="1.7" />
       <module name="SpringMVC_03interceptor" target="1.7" />
       <module name="SSM" target="1.7" />
+      <module name="ssm-dao" target="1.8" />
+      <module name="ssm-domain" target="1.8" />
+      <module name="ssm-service" target="1.8" />
+      <module name="ssm-utils" target="1.8" />
+      <module name="ssm-web" target="1.8" />
+      <module name="SSMsystem" target="1.7" />
       <module name="travel" target="1.7" />
     </bytecodeTargetLevel>
   </component>

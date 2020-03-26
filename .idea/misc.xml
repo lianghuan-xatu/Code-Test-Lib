@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/heima_ssm/ssm-web" />
     <file type="web" url="file://$PROJECT_DIR$/maven_web" />
+    <file type="web" url="file://$PROJECT_DIR$/maven高级" />
     <file type="web" url="file://$PROJECT_DIR$/Mybatis" />
     <file type="web" url="file://$PROJECT_DIR$/Mybatis03" />
     <file type="web" url="file://$PROJECT_DIR$/MyBatis04" />
@@ -33,6 +35,7 @@
     <file type="web" url="file://$PROJECT_DIR$/SpringMVC_02response" />
     <file type="web" url="file://$PROJECT_DIR$/SpringMVC_03interceptor" />
     <file type="web" url="file://$PROJECT_DIR$/SSM" />
+    <file type="web" url="file://$PROJECT_DIR$/SSMsystem" />
     <file type="web" url="file://$PROJECT_DIR$/travel" />
     <file type="web" url="file://$PROJECT_DIR$/../maven_web" />
   </component>
@@ -78,6 +81,8 @@
         <option value="$PROJECT_DIR$/SpringMVC_02response/pom.xml" />
         <option value="$PROJECT_DIR$/SpringMVC_03interceptor/pom.xml" />
         <option value="$PROJECT_DIR$/SSM/pom.xml" />
+        <option value="$PROJECT_DIR$/maven高级/pom.xml" />
+        <option value="$PROJECT_DIR$/heima_ssm/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
