@@ -19,8 +19,8 @@ public class ProductController {
     public ModelAndView findAll() throws Exception {
         ModelAndView mv=new ModelAndView();
         List<Product> ps = productService.findAll();
-        mv.addObject("",ps);
-        mv.setViewName(" ");
+        mv.addObject("productList",ps);
+        mv.setViewName("product-list");
 
         return mv;
     }

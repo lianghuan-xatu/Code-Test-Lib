@@ -61,6 +61,16 @@
     <file url="file://$PROJECT_DIR$/Spring_14tx_xml/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring_15_tx_anno/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring_15_tx_anno/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/heima_ssm/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/heima_ssm/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/heima_ssm/ssm-dao/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/heima_ssm/ssm-dao/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/heima_ssm/ssm-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/heima_ssm/ssm-domain/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/heima_ssm/ssm-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/heima_ssm/ssm-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/heima_ssm/ssm-utils/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/heima_ssm/ssm-utils/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/heima_ssm/ssm-web/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/heima_ssm/ssm-web/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/maven_web/src/main/java" charset="UTF-8" />

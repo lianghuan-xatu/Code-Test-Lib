@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-    <a href="${pageContext.request.contextPath}+">查询所有产品信息</a>
+    <a href="${pageContext.request.contextPath}/product/findAll">查询所有产品信息</a>
 </body>
 </html>
