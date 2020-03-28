@@ -15,14 +15,25 @@ public class ProductController {
     @Autowired
     private IProductService productService;
 
+    /**
+     * 查询全部产品信息
+     * @return
+     * @throws Exception
+     */
     @RequestMapping("/findAll")
     public ModelAndView findAll() throws Exception {
         ModelAndView mv=new ModelAndView();
         List<Product> ps = productService.findAll();
         mv.addObject("productList",ps);
-        mv.setViewName("product-list");
+        mv.setViewName("product-list1");
 
         return mv;
+    }
+
+    @RequestMapping("/save")
+    private String save(Product product){
+        productService.save(product);
+        return "redirect:findAll";
     }
 
 }

@@ -20,6 +20,9 @@
           <element id="archive" name="ssm-domain-1.0-SNAPSHOT.jar">
             <element id="module-output" name="ssm-domain" />
           </element>
+          <element id="archive" name="ssm-utils-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="ssm-utils" />
+          </element>
           <element id="archive" name="ssm-dao-1.0-SNAPSHOT.jar">
             <element id="module-output" name="ssm-dao" />
           </element>

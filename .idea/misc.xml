@@ -87,8 +87,6 @@
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/Mybatis/MyBatis02/pom.xml" />
-        <option value="$PROJECT_DIR$/Spring_08account_annoIOCwithoutxml/pom.xml" />
         <option value="$PROJECT_DIR$/maven_web/pom.xml" />
       </set>
     </option>
