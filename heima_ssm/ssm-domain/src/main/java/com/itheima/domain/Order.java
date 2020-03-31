@@ -9,6 +9,7 @@ import java.util.List;
 public class Order {
     private String id;
     private String orderNum;
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
     private Date orderTime;
     private String orderTimeStr;
     private int orderStatus;

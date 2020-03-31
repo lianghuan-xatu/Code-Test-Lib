@@ -47,10 +47,6 @@ public class DOM4J_5
         writer.close();
 */
 
-
-
-
-
         //新的方式
 
         //在此之前 必须添加在DOM4J框架lib目录下的jaxen-1.1-beta-6.jar包

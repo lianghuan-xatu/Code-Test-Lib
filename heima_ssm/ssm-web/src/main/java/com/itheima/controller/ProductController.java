@@ -1,12 +1,16 @@
 package com.itheima.controller;
 
+import com.itheima.DateStringEditor;
 import com.itheima.domain.Product;
 import com.itheima.service.IProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -14,6 +18,13 @@ import java.util.List;
 public class ProductController {
     @Autowired
     private IProductService productService;
+
+
+    //自定义类型转换器
+    @InitBinder
+    public void initBinder(WebDataBinder binder){
+        binder.registerCustomEditor(Date.class,new DateStringEditor());
+    }
 
     /**
      * 查询全部产品信息
