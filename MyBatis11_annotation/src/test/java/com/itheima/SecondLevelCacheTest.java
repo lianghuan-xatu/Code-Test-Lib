@@ -20,19 +20,20 @@ import java.util.List;
 
 
 public class SecondLevelCacheTest {
-    private InputStream in ;
+    private InputStream in;
     private SqlSession sqlSession;
     private SqlSessionFactory sqlSessionFactory;
     private IUserDao dao;
+
     @Before//用于在测试方法执行之前
-    public void init()throws IOException {
+    public void init() throws IOException {
         //读取配置文件，生成字节输入流
-        in=Resources.getResourceAsStream("SqlMapConfig.xml");
+        in = Resources.getResourceAsStream("SqlMapConfig.xml");
         //获取SqlSessionFactory
-        SqlSessionFactoryBuilder sqlSessionFactoryBuilder=new SqlSessionFactoryBuilder();
-        sqlSessionFactory=sqlSessionFactoryBuilder.build(in);
+        SqlSessionFactoryBuilder sqlSessionFactoryBuilder = new SqlSessionFactoryBuilder();
+        sqlSessionFactory = sqlSessionFactoryBuilder.build(in);
         //使用工厂对象，创建dao对象
-        sqlSession=sqlSessionFactory.openSession();
+        sqlSession = sqlSessionFactory.openSession();
         dao = sqlSession.getMapper(IUserDao.class);
     }
 
@@ -49,11 +50,11 @@ public class SecondLevelCacheTest {
      * 查询方法
      */
     @Test
-    public void testFindAll()  {
+    public void testFindAll() {
 
         //执行方法
-        List<User> users=dao.findAll();
-        for(User user:users){
+        List<User> users = dao.findAll();
+        for (User user : users) {
             System.out.println(user);
             System.out.println(user.getAccounts());
         }
@@ -61,21 +62,18 @@ public class SecondLevelCacheTest {
     }
 
 
-
-
     @Test
-    public void testfindUserById(){
+    public void testfindUserById() {
         User user = dao.findById(57);
         System.out.println(user);
         sqlSession.close();//释放一级缓存
-        SqlSession session1=sqlSessionFactory.openSession();//再次打开session
-        IUserDao userDao1=session1.getMapper(IUserDao.class);
+        SqlSession session1 = sqlSessionFactory.openSession();//再次打开session
+        IUserDao userDao1 = session1.getMapper(IUserDao.class);
         User user1 = userDao1.findById(57);
         System.out.println(user1);
 
 
     }
-
 
 
 }

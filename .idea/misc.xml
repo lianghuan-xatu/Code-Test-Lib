@@ -59,7 +59,6 @@
         <option value="$PROJECT_DIR$/MyBatis08_Lazy/pom.xml" />
         <option value="$PROJECT_DIR$/MyBatis09_Cache/pom.xml" />
         <option value="$PROJECT_DIR$/MyBatis10_annotation/pom.xml" />
-        <option value="$PROJECT_DIR$/MyBatis11_annotation/pom.xml" />
         <option value="$PROJECT_DIR$/Spring_01factory/pom.xml" />
         <option value="$PROJECT_DIR$/Spring_02spring/pom.xml" />
         <option value="$PROJECT_DIR$/Spring_03bean/pom.xml" />
@@ -83,6 +82,8 @@
         <option value="$PROJECT_DIR$/SSM/pom.xml" />
         <option value="$PROJECT_DIR$/maven高级/pom.xml" />
         <option value="$PROJECT_DIR$/heima_ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-01-helloword/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-02-config/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>spring-boot-02-config</artifactId>
+    <artifactId>spring-boot-01-helloword</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-boot-02-config</name>
+    <name>spring-boot-01-helloword</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -23,7 +23,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
+<!--Spring-boot单元测试模块-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

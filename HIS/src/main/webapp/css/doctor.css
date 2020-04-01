@@ -1,0 +1,49 @@
+
+
+/*专家介绍*/
+.d_division{}
+.d_division h2{height:40px;border-bottom:3px solid #cccccc;line-height:40px;font-weight:normal;color:#015198;}
+.d_Section{overflow:hidden;margin-top:7px;padding-left:10px;}
+.d_Section li{width:154px;height:50px;background:#015198;margin-right:10px;float:left;margin-top:10px;}
+.d_Section li a{display:block;height:50px;line-height:50px;font-family:"Microsoft YaHei";color:#fff;font-size:16px;background:url(../img/d_yellow.jpg) no-repeat left top;padding-left:21px;}
+
+/*专家介绍2*/
+/*.all_doctor{margin-top:16px;}*/
+.row{overflow:hidden;border-bottom:1px solid #ebebeb;}
+.row dl{width:250px;height:130px;float:left;padding-top:15px; margin-right:10px}
+.row dl dt{width:84px;height:113px;float:left;margin-right:10px;}
+.row dl dd{width:155px;height:113px;float:left;font-family:"Microsoft YaHei";}
+.row dl dd p{line-height:19px;font-size:14px;}
+.row dl dd .r_p1{color:#006699;font-weight:bold;}
+.row dl dd .r_p2{color:#666666;}
+.row dl dd .r_p2 span{color:#333333;}
+.row dl dd .r_p3{margin-top:10px;font-size:12px;}
+.row dl dd .r_p3 a{color:#cc0000;display:block;background:url(../img/more.jpg) no-repeat left top;width:73px;text-align:center;}
+.one_survey{border-bottom:1px dashed #cccccc;padding-top:10px;padding-left:5px;padding-right:5px;}
+.one_survey .s_title{height:27px;line-height:27px;background:none;font-size:16px;margin:0;padding:0;position:relative;}
+.one_survey .s_title span{color:#333333;font-weight:bold;background:url(../img/sj.jpg) no-repeat left center;padding-left:15px;}
+.one_survey .s_title a{display:block;width:57px;height:18px;background:url(../img/s_yellow.jpg) repeat-x left top;font-size:12px;position:absolute;right:0;top:9px;text-align:center;line-height:18px;color:#fff;}
+.one_survey p{line-height:24px;font-size:14px;font-family:"Microsoft YaHei";padding-bottom:8px;}
+.one_survey p a{color:#999999;display:block;}
+.one_survey p a:hover{color:#014f94;}
+
+/*专家介绍2*/
+.vote{font-size:14px;font-family:"Microsoft YaHei";color:#999999;line-height:24px;margin-top:21px;margin-bottom:27px; text-indent:2em}
+.Radio{font-family:"Microsoft YaHei";font-size:16px; padding-left:200px}
+.n_btn{text-align:center;margin-top:5px; padding-top:35px}
+.n_btn input{border:0;width:117px;height:34px;background:url(../img/n_btn1.jpg) no-repeat left top;margin-right:12px;cursor:pointer;}
+.n_btn .n_btn2{background:url(../img/n_btn2.jpg) no-repeat left top;}
+.n_btn .n_btn3{background:url(../img/n_btn3.jpg) no-repeat left top;}
+
+
+/*院长详细*/
+.person{height:245px;margin-top:19px;padding-left:30px;}
+.person dt{width:150px;height:245px;float:left;margin-right:30px;}
+.person dd{width:550px;font-family:"Microsoft YaHei";float:left;height:245px;}
+.person dd p{line-height:29px;font-size:14px;}
+.intro{margin-top:15px;font-family:"Microsoft YaHei";}
+.intro h6{height:43px;line-height:43px;border-bottom:1px solid #ebebeb;font-size:16px;color:#006699;}
+.intro p{line-height:24px;font-size:14px;color:#666666;margin-top:10px;}
+
+
+

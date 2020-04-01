@@ -12,20 +12,22 @@ import java.util.List;
 public interface IAccountDao {
     /**
      * 查询所有账户
+     *
      * @return
      */
     @Select("select * from account")
-    @Results(id="accountMap",value = {
-            @Result(id=true,property = "id",column ="id" ),
-            @Result(property = "uid",column = "uid"),
-            @Result(property = "money",column = "money"),
-            @Result(property = "user",column = "uid",one = @One( select="com.itheima.dao.IUserDao.findById",fetchType= FetchType.EAGER))
+    @Results(id = "accountMap", value = {
+            @Result(id = true, property = "id", column = "id"),
+            @Result(property = "uid", column = "uid"),
+            @Result(property = "money", column = "money"),
+            @Result(property = "user", column = "uid", one = @One(select = "com.itheima.dao.IUserDao.findById", fetchType = FetchType.EAGER))
     })
     List<Account> findAll();
 
 
     /**
      * 根据用户id查询账户信息
+     *
      * @param userId
      * @return
      */

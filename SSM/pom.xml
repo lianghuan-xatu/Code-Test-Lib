@@ -183,5 +183,18 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+        <plugins>
+            <plugin> <!-- 配置Tomcat插件 -->
+
+                    <groupId>org.apache.tomcat.maven</groupId>
+                    <artifactId>tomcat7-maven-plugin</artifactId>
+                    <version>2.2</version>
+                    <configuration>
+                      <port>8080</port>
+                      <path>/</path>
+                      <uriEncoding>UTF-8</uriEncoding>
+                    </configuration>
+                  </plugin>
+        </plugins>
     </build>
 </project>

@@ -6,13 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Spring_06account_xmlioc" />
         <module name="MyBatis11_annotation" />
         <module name="travel" />
         <module name="MyBatis08_Lazy" />
+        <module name="MyBatis07_JNDI" />
         <module name="MyBatis06" />
         <module name="MyBatis05" />
         <module name="MyBatis04" />
+        <module name="spring-boot-01-helloword" />
         <module name="Spring_12AOP" />
         <module name="MyBatis01" />
         <module name="Spring_02spring" />
@@ -25,14 +26,13 @@
         <module name="SpringMVC_01quickstart" />
         <module name="ssm-web" />
         <module name="ssm-utils" />
-        <module name="Spring_05anno_IOC" />
+        <module name="Spring_06account_xmlioc" />
         <module name="maven高级" />
         <module name="MyBatis09_Cache" />
         <module name="MyBatis10_annotation" />
-        <module name="Spring_15_tx_anno" />
         <module name="Spring_11accountProxy2" />
         <module name="Spring_03bean" />
-        <module name="MyBatis07_JNDI" />
+        <module name="Spring_15_tx_anno" />
         <module name="maven_web" />
         <module name="Spring_09_account" />
         <module name="ssm-domain" />
@@ -44,6 +44,8 @@
         <module name="SpringMVC_03interceptor" />
         <module name="Mybatis" />
         <module name="Spring_08account_annoIOC_withoutxml" />
+        <module name="spring-boot-02-config" />
+        <module name="Spring_05anno_IOC" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -67,6 +69,8 @@
       <module name="MyBatis09_Cache" target="1.7" />
       <module name="MyBatis10_annotation" target="1.7" />
       <module name="MyBatis11_annotation" target="1.7" />
+      <module name="spring-boot-01-helloword" target="1.8" />
+      <module name="spring-boot-02-config" target="1.8" />
       <module name="Spring_01factory" target="1.7" />
       <module name="Spring_02spring" target="1.7" />
       <module name="Spring_03bean" target="1.7" />
@@ -97,5 +101,11 @@
       <module name="SSMsystem" target="1.7" />
       <module name="travel" target="1.7" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-boot-01-helloword" options="-parameters" />
+      <module name="spring-boot-02-config" options="-parameters" />
+    </option>
   </component>
 </project>
