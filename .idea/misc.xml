@@ -84,6 +84,7 @@
         <option value="$PROJECT_DIR$/heima_ssm/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-01-helloword/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-02-config/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-03-crud-restfulcrud/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -50,6 +50,7 @@
       <module fileurl="file://$PROJECT_DIR$/redis/redis.iml" filepath="$PROJECT_DIR$/redis/redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-01-helloword/spring-boot-01-helloword.iml" filepath="$PROJECT_DIR$/spring-boot-01-helloword/spring-boot-01-helloword.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-02-config/spring-boot-02-config.iml" filepath="$PROJECT_DIR$/spring-boot-02-config/spring-boot-02-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-03-crud-restfulcrud/spring-boot-03-crud-restfulcrud.iml" filepath="$PROJECT_DIR$/spring-boot-03-crud-restfulcrud/spring-boot-03-crud-restfulcrud.iml" />
       <module fileurl="file://$PROJECT_DIR$/heima_ssm/ssm-dao/ssm-dao.iml" filepath="$PROJECT_DIR$/heima_ssm/ssm-dao/ssm-dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/heima_ssm/ssm-domain/ssm-domain.iml" filepath="$PROJECT_DIR$/heima_ssm/ssm-domain/ssm-domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/heima_ssm/ssm-service/ssm-service.iml" filepath="$PROJECT_DIR$/heima_ssm/ssm-service/ssm-service.iml" />

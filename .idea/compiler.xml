@@ -37,6 +37,7 @@
         <module name="Spring_09_account" />
         <module name="ssm-domain" />
         <module name="SpringMVC_02response" />
+        <module name="spring-boot-03-crud-restfulcrud" />
         <module name="Spring_07annoioc" />
         <module name="Spring_13annotationAOP" />
         <module name="Spring_10accountProxy" />
@@ -71,6 +72,7 @@
       <module name="MyBatis11_annotation" target="1.7" />
       <module name="spring-boot-01-helloword" target="1.8" />
       <module name="spring-boot-02-config" target="1.8" />
+      <module name="spring-boot-03-crud-restfulcrud" target="1.8" />
       <module name="Spring_01factory" target="1.7" />
       <module name="Spring_02spring" target="1.7" />
       <module name="Spring_03bean" target="1.7" />
@@ -106,6 +108,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-boot-01-helloword" options="-parameters" />
       <module name="spring-boot-02-config" options="-parameters" />
+      <module name="spring-boot-03-crud-restfulcrud" options="-parameters" />
     </option>
   </component>
 </project>
