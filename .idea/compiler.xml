@@ -9,7 +9,6 @@
         <module name="MyBatis11_annotation" />
         <module name="travel" />
         <module name="MyBatis08_Lazy" />
-        <module name="MyBatis07_JNDI" />
         <module name="MyBatis06" />
         <module name="MyBatis05" />
         <module name="MyBatis04" />
@@ -20,6 +19,7 @@
         <module name="Spring_14tx_xml" />
         <module name="Spring_04DI" />
         <module name="ssm-service" />
+        <module name="spring-boot-05-data-jdbc" />
         <module name="ssm-dao" />
         <module name="Mybatis03" />
         <module name="Spring_01factory" />
@@ -30,9 +30,10 @@
         <module name="maven高级" />
         <module name="MyBatis09_Cache" />
         <module name="MyBatis10_annotation" />
+        <module name="Spring_15_tx_anno" />
         <module name="Spring_11accountProxy2" />
         <module name="Spring_03bean" />
-        <module name="Spring_15_tx_anno" />
+        <module name="MyBatis07_JNDI" />
         <module name="maven_web" />
         <module name="Spring_09_account" />
         <module name="ssm-domain" />
@@ -45,6 +46,7 @@
         <module name="SpringMVC_03interceptor" />
         <module name="Mybatis" />
         <module name="Spring_08account_annoIOC_withoutxml" />
+        <module name="spring-boot-04-web-jsp" />
         <module name="spring-boot-02-config" />
         <module name="Spring_05anno_IOC" />
       </profile>
@@ -73,6 +75,8 @@
       <module name="spring-boot-01-helloword" target="1.8" />
       <module name="spring-boot-02-config" target="1.8" />
       <module name="spring-boot-03-crud-restfulcrud" target="1.8" />
+      <module name="spring-boot-04-web-jsp" target="1.8" />
+      <module name="spring-boot-05-data-jdbc" target="1.8" />
       <module name="Spring_01factory" target="1.7" />
       <module name="Spring_02spring" target="1.7" />
       <module name="Spring_03bean" target="1.7" />
@@ -109,6 +113,8 @@
       <module name="spring-boot-01-helloword" options="-parameters" />
       <module name="spring-boot-02-config" options="-parameters" />
       <module name="spring-boot-03-crud-restfulcrud" options="-parameters" />
+      <module name="spring-boot-04-web-jsp" options="-parameters" />
+      <module name="spring-boot-05-data-jdbc" options="-parameters" />
     </option>
   </component>
 </project>

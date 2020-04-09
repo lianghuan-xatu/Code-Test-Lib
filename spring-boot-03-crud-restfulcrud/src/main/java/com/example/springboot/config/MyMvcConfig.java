@@ -16,11 +16,6 @@ import java.util.List;
 @Configuration
 public class MyMvcConfig implements WebMvcConfigurer {
 
-    public WebServerFactoryCustomizer<WebServerFactory> webServerFactoryWebServerFactoryCustomizer(){
-        return 
-    }
-
-
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {

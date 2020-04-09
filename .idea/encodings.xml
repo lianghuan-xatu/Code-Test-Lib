@@ -77,6 +77,8 @@
     <file url="file://$PROJECT_DIR$/spring-boot-01-helloword/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-02-config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-03-crud-restfulcrud/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-04-web-jsp/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-05-data-jdbc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/travel/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/travel/src/main/resources" charset="UTF-8" />
   </component>
