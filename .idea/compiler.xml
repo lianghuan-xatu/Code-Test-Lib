@@ -30,20 +30,31 @@
         <module name="maven高级" />
         <module name="MyBatis09_Cache" />
         <module name="MyBatis10_annotation" />
+        <module name="springboot-05-security" />
         <module name="Spring_15_tx_anno" />
         <module name="Spring_11accountProxy2" />
         <module name="Spring_03bean" />
         <module name="MyBatis07_JNDI" />
+        <module name="spring-boot-07" />
         <module name="maven_web" />
         <module name="Spring_09_account" />
+        <module name="springboot-02-amqp" />
+        <module name="spring-boot-08-starter-test" />
+        <module name="springboot-08-actuator" />
         <module name="ssm-domain" />
         <module name="SpringMVC_02response" />
+        <module name="springboot-07-deploy" />
         <module name="spring-boot-03-crud-restfulcrud" />
         <module name="Spring_07annoioc" />
         <module name="Spring_13annotationAOP" />
+        <module name="spring-boot-06-data-jpa" />
         <module name="Spring_10accountProxy" />
         <module name="SSM" />
         <module name="SpringMVC_03interceptor" />
+        <module name="springboot-04-task" />
+        <module name="springboot-01-cache" />
+        <module name="spring-boot-06-data-mybatis" />
+        <module name="springboot-03-elastic" />
         <module name="Mybatis" />
         <module name="Spring_08account_annoIOC_withoutxml" />
         <module name="spring-boot-04-web-jsp" />
@@ -77,6 +88,10 @@
       <module name="spring-boot-03-crud-restfulcrud" target="1.8" />
       <module name="spring-boot-04-web-jsp" target="1.8" />
       <module name="spring-boot-05-data-jdbc" target="1.8" />
+      <module name="spring-boot-06-data-jpa" target="1.8" />
+      <module name="spring-boot-06-data-mybatis" target="1.8" />
+      <module name="spring-boot-07" target="1.8" />
+      <module name="spring-boot-08-starter-test" target="1.8" />
       <module name="Spring_01factory" target="1.7" />
       <module name="Spring_02spring" target="1.7" />
       <module name="Spring_03bean" target="1.7" />
@@ -95,6 +110,13 @@
       <module name="Spring_14tx_xml" target="1.7" />
       <module name="Spring_15_tx_anno" target="1.7" />
       <module name="Spring_15tx_anno" target="1.5" />
+      <module name="springboot-01-cache" target="1.8" />
+      <module name="springboot-02-amqp" target="1.8" />
+      <module name="springboot-03-elastic" target="1.8" />
+      <module name="springboot-04-task" target="1.8" />
+      <module name="springboot-05-security" target="1.8" />
+      <module name="springboot-07-deploy" target="1.8" />
+      <module name="springboot-08-actuator" target="1.8" />
       <module name="SpringMVC_01quickstart" target="1.7" />
       <module name="SpringMVC_02response" target="1.7" />
       <module name="SpringMVC_03interceptor" target="1.7" />

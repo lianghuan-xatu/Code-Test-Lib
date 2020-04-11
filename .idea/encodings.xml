@@ -79,6 +79,28 @@
     <file url="file://$PROJECT_DIR$/spring-boot-03-crud-restfulcrud/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-04-web-jsp/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-05-data-jdbc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-06-data-jpa/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-06-data-jpa/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-06-data-mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-06-data-mybatis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-07/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-07/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-08-starter-test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-08-starter-test/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-01-cache/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-01-cache/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-02-amqp/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-02-amqp/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-03-elastic/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-03-elastic/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-04-task/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-04-task/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-05-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-05-security/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-07-deploy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-07-deploy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-08-actuator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-08-actuator/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/travel/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/travel/src/main/resources" charset="UTF-8" />
   </component>

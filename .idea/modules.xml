@@ -53,6 +53,17 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot-03-crud-restfulcrud/spring-boot-03-crud-restfulcrud.iml" filepath="$PROJECT_DIR$/spring-boot-03-crud-restfulcrud/spring-boot-03-crud-restfulcrud.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-04-web-jsp/spring-boot-04-web-jsp.iml" filepath="$PROJECT_DIR$/spring-boot-04-web-jsp/spring-boot-04-web-jsp.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-05-data-jdbc/spring-boot-05-data-jdbc.iml" filepath="$PROJECT_DIR$/spring-boot-05-data-jdbc/spring-boot-05-data-jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-06-data-jpa/spring-boot-06-data-jpa.iml" filepath="$PROJECT_DIR$/spring-boot-06-data-jpa/spring-boot-06-data-jpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-06-data-mybatis/spring-boot-06-data-mybatis.iml" filepath="$PROJECT_DIR$/spring-boot-06-data-mybatis/spring-boot-06-data-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-07/spring-boot-07.iml" filepath="$PROJECT_DIR$/spring-boot-07/spring-boot-07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-08-starter-test/spring-boot-08-starter-test.iml" filepath="$PROJECT_DIR$/spring-boot-08-starter-test/spring-boot-08-starter-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-01-cache/springboot-01-cache.iml" filepath="$PROJECT_DIR$/springboot-01-cache/springboot-01-cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-02-amqp/springboot-02-amqp.iml" filepath="$PROJECT_DIR$/springboot-02-amqp/springboot-02-amqp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-03-elastic/springboot-03-elastic.iml" filepath="$PROJECT_DIR$/springboot-03-elastic/springboot-03-elastic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-04-task/springboot-04-task.iml" filepath="$PROJECT_DIR$/springboot-04-task/springboot-04-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-05-security/springboot-05-security.iml" filepath="$PROJECT_DIR$/springboot-05-security/springboot-05-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-07-deploy/springboot-07-deploy.iml" filepath="$PROJECT_DIR$/springboot-07-deploy/springboot-07-deploy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-08-actuator/springboot-08-actuator.iml" filepath="$PROJECT_DIR$/springboot-08-actuator/springboot-08-actuator.iml" />
       <module fileurl="file://$PROJECT_DIR$/heima_ssm/ssm-dao/ssm-dao.iml" filepath="$PROJECT_DIR$/heima_ssm/ssm-dao/ssm-dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/heima_ssm/ssm-domain/ssm-domain.iml" filepath="$PROJECT_DIR$/heima_ssm/ssm-domain/ssm-domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/heima_ssm/ssm-service/ssm-service.iml" filepath="$PROJECT_DIR$/heima_ssm/ssm-service/ssm-service.iml" />
