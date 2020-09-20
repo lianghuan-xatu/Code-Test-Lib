@@ -1,0 +1,86 @@
+<!-- 头部 start -->
+<script src="js/getParameter.js"></script>
+  <script>
+      $(function () {
+          /**
+           * 查询用户名
+           */
+            $.get("user/findone",{},function (data) {
+                if(data!=null){
+                    var msg="欢迎回来，"+data.name;
+                    $("#span_name").html(msg);
+                }
+            });
+
+
+          /***
+           * 查询分类数据 拼接字符串
+           */
+          $.get("category/findAll",{},function (data) {
+                var lis=' <li class="nav-active"><a href="index.html">首页</a></li>';
+                lis+='<li><a href="favoriterank.html">预约挂号</a></li>';
+                lis+='<li><a href="favoriterank.html">特色诊疗</a></li>';
+              lis+='<li><a href="favoriterank.html">医生介绍</a></li>';
+              lis+='<li><a href="favoriterank.html">新闻中心</a></li>';
+              lis+='<li><a href="favoriterank.html">健康科普</a></li>';
+                $("#category").html(lis);
+            });
+
+          //给搜索按钮绑定单击事件，获取搜索输入框的内容
+          $("#search_button").click(function () {
+                //线路名称
+              var rname=$("#search_input").val();
+            //跳转路径
+              var cid=getParameter("cid");
+              location.href="route_list.html?cid="+cid+"&rname="+rname;
+          });
+      });
+  </script>
+
+    <header id="header">
+        <div class="top_banner">
+            <img src="images/header_bg.png" width="1500px" height="128px" alt=""> <!-- 页面顶部背景-->
+        </div>
+        <div class="shortcut">
+            <!-- 未登录状态  -->
+            <div class="login_out">
+                <a href="login.html">登录</a>
+                <a href="register.html">注册</a>
+            </div>
+            <!-- 登录状态  -->
+            <div class="login">
+            	
+                <span id="span_name"></span>
+                <a href="myfavorite.html" class="collection">就医指南</a>
+                <a href="javascript:location.href='user/exit';">退出</a>
+            </div>
+        </div>
+        <div class="header_wrap">
+            <div class="topbar">
+                <div class="logo">
+                    <a href="/"><img src="images/his-logo2.jpg"alt=""></a>
+                </div>
+                <div class="search">
+                    <input name="" id="search_input" type="text" placeholder="请输入搜索内容" class="search_input" autocomplete="off">
+                    <a href="javascript:;" id="search_button" class="search-button">搜索</a>
+                </div>
+                <div class="hottel">
+                    <div class="hot_pic">
+                        <img src="images/hot_tel.jpg" alt="">
+                    </div>
+                    <div class="hot_tel">
+                        <p class="hot_time">急诊电话(24h)</p>
+                        <p class="hot_num">400-324-9090</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 头部 end -->
+     <!-- 首页导航 -->
+    <div class="navitem">
+        <ul class="nav" id="category">
+
+        </ul>
+    </div>
+    

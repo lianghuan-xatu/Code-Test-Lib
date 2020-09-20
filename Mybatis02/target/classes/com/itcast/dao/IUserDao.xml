@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    &lt;!&ndash;    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">&ndash;&gt;-->
+ <mapper namespace="com.itcast.dao.IUserDao">
+    <!--配置查询所有-->
+    <select id="findAll" resultType="com.itcast.domain.User">
+        select * from user
+    </select>
+</mapper>

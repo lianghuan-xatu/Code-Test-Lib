@@ -1,0 +1,14 @@
+2020-04-10 10:24:44,918 0      [           main] DEBUG           druid.sql.Connection  - {conn-10001,procId-59} connected
+2020-04-10 10:24:44,929 11     [           main] DEBUG           druid.sql.Connection  - {conn-10002,procId-60} connected
+2020-04-10 10:24:44,937 19     [           main] DEBUG           druid.sql.Connection  - {conn-10003,procId-61} connected
+2020-04-10 10:24:44,943 25     [           main] DEBUG           druid.sql.Connection  - {conn-10004,procId-62} connected
+2020-04-10 10:24:44,949 31     [           main] DEBUG           druid.sql.Connection  - {conn-10005,procId-63} connected
+2020-04-10 10:24:44,959 41     [           main] DEBUG           druid.sql.Connection  - {conn-10005} pool-connect
+2020-04-10 10:24:44,965 47     [           main] DEBUG           druid.sql.Connection  - {conn-10005} pool-recycle
+2020-04-10 10:24:46,226 1308   [           main] DEBUG           druid.sql.Connection  - {conn-10005} pool-connect
+2020-04-10 10:24:46,226 1308   [           main] DEBUG           druid.sql.Connection  - {conn-10005} pool-recycle
+2020-04-10 10:24:46,259 1341   [extShutdownHook] DEBUG           druid.sql.Connection  - {conn-10001} closed
+2020-04-10 10:24:46,259 1341   [extShutdownHook] DEBUG           druid.sql.Connection  - {conn-10002} closed
+2020-04-10 10:24:46,260 1342   [extShutdownHook] DEBUG           druid.sql.Connection  - {conn-10003} closed
+2020-04-10 10:24:46,260 1342   [extShutdownHook] DEBUG           druid.sql.Connection  - {conn-10004} closed
+2020-04-10 10:24:46,260 1342   [extShutdownHook] DEBUG           druid.sql.Connection  - {conn-10005} closed
